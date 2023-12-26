@@ -1,17 +1,20 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "website_portfolio"
+  title: "Avianna"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About Me
+    right:
+      - icon: github
+        href: https://github.com/AviannaBui/portfolio_website 
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 

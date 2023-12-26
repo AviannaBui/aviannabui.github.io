@@ -3,20 +3,40 @@ project:
   output-dir: docs
 
 website:
-  title: "Avianna"
+  title: "Avianna Bui"
   navbar:
     left:
       - href: about.qmd
-        text: About Me
+        text: Home
+      - text: Projects
+        menu: 
+          - href: ds.qmd
+            text: Data Science
+          - href: cs.qmd
+            text: Computer Science
+      - href: dataviz.qmd
+        text: Data Visualizations
     right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/avianna-bui/
       - icon: github
-        href: https://github.com/AviannaBui/portfolio_website 
+        href: https://github.com/AviannaBui
+  
+  page-footer:
+    left: |
+      &copy; Avianna Bui, 2024<br>
+      All content licensed under <i class='bi-badge-cc'></i>
+      [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+    right: |
+      Site built with <a href='https://quarto.org/'>Quarto</a>
+
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
+    code-overflow: wrap
 
 
 

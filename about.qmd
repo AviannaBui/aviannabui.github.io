@@ -1,9 +1,40 @@
 ---
-title: "About"
+title: "Hien-Anh (Avianna) Bui"
+about:
+  id: introduction
+  template: trestles
+  image-width: 20em
+  image-shape: round
+  image: images/profile.jpg
+  links:
+    - icon: person-workspace
+      text: Resume
+      href: https://drive.google.com/file/d/1vOoiOKygVtGO9UwCSoQAp54jWyM9sP_y/view?usp=sharing 
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/avianna-bui/
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui
 ---
 
-About this site
+:::{#introduction}
 
-```{r}
-1 + 1
-```
+Hi, my name is Avianna (she/her). I am a junior at <a href="https://www.macalester.edu/" target="_blank" rel="noopener">Macalester College</a> pursuing a <a href="https://www.macalester.edu/mscs/majorsminors/#program-3827" target="_blank" rel="noopener">Data Science major</a> along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices. 
+
+Please check out my Projects and Data Visualizations tabs for examples of my work!
+
+### Education
+
+Macalester College | St. Paul, Minnesota<br>
+B.A in Data Science, expected May 2025
+
+:::
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@ about:
   links:
     - icon: person-workspace
       text: Resume
-      href: https://drive.google.com/file/d/1vOoiOKygVtGO9UwCSoQAp54jWyM9sP_y/view?usp=sharing 
+      href: https://drive.google.com/file/d/1NZAdPXWJ7W5Gy4htkjjBCOPpnb9I-yBn/view?usp=sharing  
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/avianna-bui/
@@ -26,7 +26,7 @@ Please check out my Projects and Data Visualizations tabs for examples of my wor
 
 ### Education
 
-Macalester College | St. Paul, Minnesota<br>
+Macalester College | *St. Paul, Minnesota*<br>
 B.A in Data Science, expected May 2025
 
 :::

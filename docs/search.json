@@ -21,11 +21,32 @@
     "text": "Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape."
   },
   {
+    "objectID": "cs-projects/pianovice/index.html",
+    "href": "cs-projects/pianovice/index.html",
+    "title": "PianOvice",
+    "section": "",
+    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Hien-Anh (Avianna) Bui",
     "section": "",
     "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+  },
+  {
+    "objectID": "cs-projects/dino/index.html",
+    "href": "cs-projects/dino/index.html",
+    "title": "Dinosaur Game",
+    "section": "",
+    "text": "Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score."
+  },
+  {
+    "objectID": "cs.html",
+    "href": "cs.html",
+    "title": "Computer Science Projects",
+    "section": "",
+    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPianOvice\n\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nDinosaur Game\n\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser\n\n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "ds-projects/college-earnings/index.html",

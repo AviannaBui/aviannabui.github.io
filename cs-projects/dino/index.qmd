@@ -1,0 +1,19 @@
+---
+title: "Dinosaur Game"
+description: |
+  Collab project with Trung Dam (Macalester '25) that recreates the Dinosaur Game built into Google Chrome's web browser
+date: 05-12-2022
+image: thumbnail.png
+categories:
+  - Python
+  - Pygame
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/DinosaurGame
+---
+
+Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score.

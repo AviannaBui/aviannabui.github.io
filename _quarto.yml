@@ -33,8 +33,7 @@ website:
 
 format:
   html:
-    theme: flatly
-    css: styles.css
+    theme: [flatly, theme.scss]
     toc: true
     code-overflow: wrap
 

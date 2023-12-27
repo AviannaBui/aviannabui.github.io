@@ -1,3 +1,14 @@
 ---
 title: "Computer Science Projects"
+listing:
+  contents: cs-projects
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+comments: false
 ---
+
+Class projects for Macalester's *Object-Oriented Programming and Abstraction* and *Core Concepts of Computer Science* 

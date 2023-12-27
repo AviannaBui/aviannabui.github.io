@@ -8,5 +8,12 @@
       "/ds-projects/mh-substance-use/index.html",
       "/ds-projects/college-earnings/index.html"
     ]
+  },
+  {
+    "listing": "/cs.html",
+    "items": [
+      "/cs-projects/pianovice/index.html",
+      "/cs-projects/dino/index.html"
+    ]
   }
 ]

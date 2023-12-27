@@ -1,0 +1,23 @@
+---
+title: "Building Edtech for Mental Wellbeing"
+description: |
+  Collab project with Na Nguyen (Macalester '25) on building mental health-conscious Edtech platforms
+date: 12-12-2023
+image: thumbnail.png
+categories:
+  - Education
+  - Psychology
+  - Health
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: link-45deg
+      text: Website
+      href: https://aviannabui.github.io/website_project_212/
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/website_project_212?tab=readme-ov-file
+---
+
+Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape.

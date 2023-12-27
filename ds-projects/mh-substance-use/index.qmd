@@ -1,0 +1,19 @@
+---
+title: "How Substance Use and Demographics Relate To Mental Health"
+description: |
+  Collab Project with Kaylee Do (Macalester '22) on Mental Health Diagnoses in Treatment Facilities
+date: 12-13-2022
+image: thumbnail.png
+categories:
+  - Psychology
+  - Health
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/Mental-Health-Diagnoses-in-US-Treatment-Facilities 
+---
+
+Our research topic centers on the relationship between substance use disorders, mental health problems, and demographics within the US. More specifically, our group aims to explore whether there is a particular type of substance misuse that bears a higher correlation with a specific diagnosis of mental illness, and whether there are any trends or patterns within certain demographics or regions of those with substance use disorders

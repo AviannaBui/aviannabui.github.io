@@ -1,9 +1,51 @@
 [
   {
+    "objectID": "ds.html",
+    "href": "ds.html",
+    "title": "Data Science Projects",
+    "section": "",
+    "text": "My data science projects apply machine learning algorithms, statistical models, and data visualizations to discover trends and tell a story across multiple domains of psychology, education, health, business, and arts. These projects demonstrate my growth as a Data Scientist through the knowledge I learn in college courses including Data Visualization, Intermediate Data Science, Statistical Machine Learning, and Statistical Modeling.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nStarbucks’ Tableau Dashboard\n\n\n\nInteractive Visualization\n\n\nHealth\n\n\nBusiness\n\n\n\nStarbucks Popularity in the USA and Drinks’ Nutrition Comparison for Cardiovascular Health\n\n\n\n\n\n\nDec 18, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Edtech for Mental Wellbeing\n\n\n\nEducation\n\n\nPsychology\n\n\nHealth\n\n\n\nCollab project with Na Nguyen (Macalester ’25) on building mental health-conscious Edtech platforms\n\n\n\n\n\n\nDec 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Song Popularity through Audio Features\n\n\n\nMachine Learning\n\n\nArts\n\n\n\nAssociation between Audio Features, Popularity, and Listeners’ Preferences\n\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Substance Use and Demographics Relate To Mental Health\n\n\n\nPsychology\n\n\nHealth\n\n\n\nCollab Project with Kaylee Do (Macalester ’22) on Mental Health Diagnoses in Treatment Facilities\n\n\n\n\n\n\nDec 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRegression Analysis of College Earnings and Expenses\n\n\n\nStatistical Modeling\n\n\nEducation\n\n\n\nAssociation Between Colleges’ Median Earnings with Instructional Expenses and Control Type\n\n\n\n\n\n\nDec 15, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ds-projects/ml-music/index.html",
+    "href": "ds-projects/ml-music/index.html",
+    "title": "Predicting Song Popularity through Audio Features",
+    "section": "",
+    "text": "What aspect do hit songs share? With the increasing globalization of the US music industry and the rise of experimental music, it becomes more challenging to determine what features distinguish hits from less popular songs. As music continues to play an integral role in our lives, whether for recreational purposes or as a mechanism for emotional outlets, it is crucial to understand the musical mechanisms that affect their popularity. By examining the factors that influence the success of a song over time, we can gain a deeper insight into music preferences and listeners’ behavior in the United States.\nTo explore the relationship between audio features and popularity, my supervised learning analysis examines the audio features that are the strongest predictors of Spotify Track Popularity by fitting a LASSO, GAM, and a random forest model. I also apply K-means Clustering to investigate if there exist any trends in the dataset across decades and audio features. These analyses allow me to gain a deeper insight into changing music preferences or composition trends in the US music industry over time."
+  },
+  {
+    "objectID": "ds-projects/edtech/index.html",
+    "href": "ds-projects/edtech/index.html",
+    "title": "Building Edtech for Mental Wellbeing",
+    "section": "",
+    "text": "Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Hien-Anh (Avianna) Bui",
     "section": "",
     "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+  },
+  {
+    "objectID": "ds-projects/college-earnings/index.html",
+    "href": "ds-projects/college-earnings/index.html",
+    "title": "Regression Analysis of College Earnings and Expenses",
+    "section": "",
+    "text": "The prospect of receiving a high-income job after graduation is one of the most commonly cited reasons for college attendance. However, the financial return of colleges is dependent on a variety of factors, including both college-based factors such as their employability reputation to potential employers and individual-based factors like the majors students decide to pursue. Since colleges’ return on investment can have a cumulative impact on an individual’s lifetime financial prospects, I am inclined to examine the factors that could potentially influence the earnings that college graduates receive. These factors include instructional expenses, control type (public/private), degree offered, and average family income."
+  },
+  {
+    "objectID": "ds-projects/mh-substance-use/index.html",
+    "href": "ds-projects/mh-substance-use/index.html",
+    "title": "How Substance Use and Demographics Relate To Mental Health",
+    "section": "",
+    "text": "Our research topic centers on the relationship between substance use disorders, mental health problems, and demographics within the US. More specifically, our group aims to explore whether there is a particular type of substance misuse that bears a higher correlation with a specific diagnosis of mental illness, and whether there are any trends or patterns within certain demographics or regions of those with substance use disorders"
+  },
+  {
+    "objectID": "ds-projects/tableau-starbucks/index.html",
+    "href": "ds-projects/tableau-starbucks/index.html",
+    "title": "Starbucks’ Tableau Dashboard",
+    "section": "",
+    "text": "Starbucks is the largest coffee chain in the United States regarding physical units, with over 15,000 stores in the U.S. in 2022. Despite this immense popularity, many Starbucks drinks are unhealthy for our heart. Combined with the fact that heart disease is the leading cause of death in the U.S., investigating Starbucks’ popularity and nutritional values might help inform people within highly popular Starbucks locations to be more conscious about their drink selections."
   }
 ]

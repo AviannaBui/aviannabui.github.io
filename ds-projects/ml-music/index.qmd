@@ -1,0 +1,21 @@
+---
+title: "Predicting Song Popularity through Audio Features"
+description: |
+  Association between Audio Features, Popularity, and Listeners’ Preferences
+date: 05-12-2023
+image: thumbnail.png
+categories:
+  - Machine Learning
+  - Arts
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/ML-audio-features-song-popularity 
+---
+
+What aspect do hit songs share? With the increasing globalization of the US music industry and the rise of experimental music, it becomes more challenging to determine what features distinguish hits from less popular songs. As music continues to play an integral role in our lives, whether for recreational purposes or as a mechanism for emotional outlets, it is crucial to understand the musical mechanisms that affect their popularity. By examining the factors that influence the success of a song over time, we can gain a deeper insight into music preferences and listeners' behavior in the United States.
+
+To explore the relationship between audio features and popularity, my supervised learning analysis examines the audio features that are the strongest predictors of Spotify Track Popularity by fitting a LASSO, GAM, and a random forest model. I also apply K-means Clustering to investigate if there exist any trends in the dataset across decades and audio features. These analyses allow me to gain a deeper insight into changing music preferences or composition trends in the US music industry over time.

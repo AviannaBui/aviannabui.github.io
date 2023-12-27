@@ -1,0 +1,23 @@
+---
+title: "Starbucks' Tableau Dashboard"
+description: |
+  Starbucks Popularity in the USA and Drinks' Nutrition Comparison for Cardiovascular Health
+date: 12-18-2023
+image: thumbnail.png
+categories:
+  - Interactive Visualization
+  - Health
+  - Business
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: link-45deg
+      text: Tableau
+      href: https://public.tableau.com/app/profile/avianna.bui/viz/shared/F7MFBWZ9P
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/tableau_starbucks_dashboard/tree/main
+---
+
+Starbucks is the largest coffee chain in the United States regarding physical units, with over 15,000 stores in the U.S. in 2022. Despite this immense popularity, many Starbucks drinks are unhealthy for our heart. Combined with the fact that heart disease is the leading cause of death in the U.S., investigating Starbucks’ popularity and nutritional values might help inform people within highly popular Starbucks locations to be more conscious about their drink selections.

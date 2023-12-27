@@ -1,0 +1,19 @@
+---
+title: "Regression Analysis of College Earnings and Expenses"
+description: |
+  Association Between Colleges' Median Earnings with Instructional Expenses and Control Type 
+date: 12-15-2021
+image: thumbnail.png
+categories:
+  - Statistical Modeling
+  - Education
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/College-Earning-vs-Expense-and-Control-Type
+---
+
+The prospect of receiving a high-income job after graduation is one of the most commonly cited reasons for college attendance. However, the financial return of colleges is dependent on a variety of factors, including both college-based factors such as their employability reputation to potential employers and individual-based factors like the majors students decide to pursue. Since colleges’ return on investment can have a cumulative impact on an individual’s lifetime financial prospects, I am inclined to examine the factors that could potentially influence the earnings that college graduates receive. These factors include instructional expenses, control type (public/private), degree offered, and average family income.

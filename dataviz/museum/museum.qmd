@@ -1,0 +1,87 @@
+---
+title: "UK Museums"
+description: |
+  TidyTuesday's UK Museums Dataset (2022)
+date: 11-24-2022
+image: thumbnail-museum.png
+categories: 
+  - TidyTuesday
+about: 
+  template: marquee
+  image: thumbnail-museum.png
+---
+
+```{r, message = F, include = F}
+library(tidyverse)
+library(ggplot2)
+library(GGally)
+library(hrbrthemes)
+library(stringr)
+library(corrplot)
+library(showtext)
+```
+
+## Data Context
+
+The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-11-22" target="_blank" rel="noopener">this link</a> 
+
+```{r, message = FALSE}
+museums <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')
+```
+
+## Research Question
+
+*Comparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London*
+
+## Data Transformation
+
+```{r, message = FALSE}
+#| code-fold: true
+data <- museums %>%
+  filter(Governance != "Unknown") %>%
+  filter(Year_closed == "9999:9999") %>% # select museums that are still open
+  filter(str_detect(Admin_area, "London")) %>%
+  mutate(governance_cat = case_when(str_detect(Governance, "Government") ~ "Government",
+                                    str_detect(Governance, "Independent") ~ "Independent",
+                                    Governance == "University" ~ "University")) %>%
+  select(Accreditation, governance_cat, Size, starts_with("Area_Deprivation_index")) %>%
+  rename_with(~ sub("Area_Deprivation_index_", "", .x), starts_with("Area_Deprivation_index_")) 
+ 
+
+data <- na.omit(data)
+```
+
+## Data Visualization
+
+```{r fonts, include = FALSE}
+font_add_google("Inter")
+```
+
+Since there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed. 
+
+```{r}
+#| code-fold: true
+corrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = "lower", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = "Correlation Matrix of Area Deprivation Indexes", mar=c(0,0,1,0), tl.col="black")
+```
+
+As seen in the plot, the *health*, *income*, and *employment* indexes are highly correlated. Since *income* is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot. 
+
+```{r, warning = F}
+#| code-fold: true
+showtext_auto()
+
+data %>%
+  select(-c(health, employment)) %>%
+  ggparcoord(
+    columns = 5:9, groupColumn = 1, scale = "globalminmax",
+    showPoints = FALSE, 
+    title = "Parallel Plot for London's Operating Museums Deprivation Indexes",
+    alphaLines = 0.7
+    ) + 
+  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +
+  scale_color_manual(values = c("#99C24D", "#048BA8")) +
+  labs(subtitle = "Index ranges from 1 (most deprived) to 10 (least deprived)") +
+  theme_ipsum()+
+  theme(plot.title = element_text(size=15), 
+        text = element_text(family = "Inter"))
+```

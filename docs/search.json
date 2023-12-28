@@ -21,18 +21,53 @@
     "text": "Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape."
   },
   {
-    "objectID": "cs-projects/pianovice/index.html",
-    "href": "cs-projects/pianovice/index.html",
-    "title": "PianOvice",
+    "objectID": "dataviz.html",
+    "href": "dataviz.html",
+    "title": "Data Visualizations",
     "section": "",
-    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHalloween Candy Power\n\n\n\nFiveThirtyEight\n\n\n\nFiveThirtyEight’s Candy Power Ranking Dataset\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUK Museums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s UK Museums Dataset (2022)\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWastewater Treatment Plants\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Wastewater Plant Dataset (2022)\n\n\n\n\n\n\nSep 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Hien-Anh (Avianna) Bui",
+    "objectID": "dataviz/museum/museum.html",
+    "href": "dataviz/museum/museum.html",
+    "title": "UK Museums",
     "section": "",
-    "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-context",
+    "href": "dataviz/museum/museum.html#data-context",
+    "title": "UK Museums",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#research-question",
+    "href": "dataviz/museum/museum.html#research-question",
+    "title": "UK Museums",
+    "section": "Research Question",
+    "text": "Research Question\nComparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-transformation",
+    "href": "dataviz/museum/museum.html#data-transformation",
+    "title": "UK Museums",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ndata &lt;- museums %&gt;%\n  filter(Governance != \"Unknown\") %&gt;%\n  filter(Year_closed == \"9999:9999\") %&gt;% # select museums that are still open\n  filter(str_detect(Admin_area, \"London\")) %&gt;%\n  mutate(governance_cat = case_when(str_detect(Governance, \"Government\") ~ \"Government\",\n                                    str_detect(Governance, \"Independent\") ~ \"Independent\",\n                                    Governance == \"University\" ~ \"University\")) %&gt;%\n  select(Accreditation, governance_cat, Size, starts_with(\"Area_Deprivation_index\")) %&gt;%\n  rename_with(~ sub(\"Area_Deprivation_index_\", \"\", .x), starts_with(\"Area_Deprivation_index_\")) \n \n\ndata &lt;- na.omit(data)"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-visualization",
+    "href": "dataviz/museum/museum.html#data-visualization",
+    "title": "UK Museums",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nSince there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed.\n\n\nCode\ncorrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = \"lower\", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = \"Correlation Matrix of Area Deprivation Indexes\", mar=c(0,0,1,0), tl.col=\"black\")\n\n\n\n\n\nAs seen in the plot, the health, income, and employment indexes are highly correlated. Since income is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot.\n\n\nCode\nshowtext_auto()\n\ndata %&gt;%\n  select(-c(health, employment)) %&gt;%\n  ggparcoord(\n    columns = 5:9, groupColumn = 1, scale = \"globalminmax\",\n    showPoints = FALSE, \n    title = \"Parallel Plot for London's Operating Museums Deprivation Indexes\",\n    alphaLines = 0.7\n    ) + \n  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +\n  scale_color_manual(values = c(\"#99C24D\", \"#048BA8\")) +\n  labs(subtitle = \"Index ranges from 1 (most deprived) to 10 (least deprived)\") +\n  theme_ipsum()+\n  theme(plot.title = element_text(size=15), \n        text = element_text(family = \"Inter\"))"
+  },
+  {
+    "objectID": "cs.html",
+    "href": "cs.html",
+    "title": "Computer Science Projects",
+    "section": "",
+    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPianOvice\n\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nDinosaur Game\n\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser\n\n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cs-projects/dino/index.html",
@@ -42,11 +77,109 @@
     "text": "Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score."
   },
   {
-    "objectID": "cs.html",
-    "href": "cs.html",
-    "title": "Computer Science Projects",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hien-Anh (Avianna) Bui",
     "section": "",
-    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPianOvice\n\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nDinosaur Game\n\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser\n\n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+  },
+  {
+    "objectID": "cs-projects/pianovice/index.html",
+    "href": "cs-projects/pianovice/index.html",
+    "title": "PianOvice",
+    "section": "",
+    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
+  },
+  {
+    "objectID": "dataviz/candy/candy.html",
+    "href": "dataviz/candy/candy.html",
+    "title": "Halloween Candy Power",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-context",
+    "href": "dataviz/candy/candy.html#data-context",
+    "title": "Halloween Candy Power",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#research-question",
+    "href": "dataviz/candy/candy.html#research-question",
+    "title": "Halloween Candy Power",
+    "section": "Research Question",
+    "text": "Research Question\nHow does win percentage differ across different sugar levels in candies and differ between chocolate and non-chocolatey ones?"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-transformation",
+    "href": "dataviz/candy/candy.html#data-transformation",
+    "title": "Halloween Candy Power",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ncandy_transformed &lt;- candy %&gt;%\n  mutate(sugar_cat = cut(sugarpercent, breaks = c(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = c(\"0-10%\", \"11-20%\", \"21-30%\", \"31-40%\", \"41-50%\", \"51-60%\", \"61-70%\", \"71-80%\", \"81-90%\", \"91-100%\"))) %&gt;%\n  mutate(type = ifelse(chocolate == 1, \"Chocolate Candy\", \"Non-Chocolate Candy\")) %&gt;%\n  group_by(sugar_cat, type) \n\n# dumbbell plot data\ndumbbell_data &lt;- candy_transformed %&gt;%\n  summarize(avg_win = mean(winpercent)) %&gt;%\n  pivot_wider(names_from = type, values_from = avg_win) %&gt;%\n  mutate(diff = round(`Chocolate Candy` - `Non-Chocolate Candy`, 2)) %&gt;%\n  pivot_longer(cols = c(`Chocolate Candy`, `Non-Chocolate Candy`), \n               names_to = \"type\", values_to = \"avg_win\") \n\nchoco &lt;- dumbbell_data %&gt;%\n  filter(type == \"Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\nother &lt;- dumbbell_data %&gt;%\n  filter(type == \"Non-Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\ndiff &lt;- dumbbell_data %&gt;% \n  filter(type == \"Non-Chocolate Candy\") %&gt;% \n  mutate(x_pos = avg_win + (diff/2)) \n\n# bar graph data\ncol_graph_data &lt;- candy_transformed %&gt;%\n  summarize(count = n())"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-visualization",
+    "href": "dataviz/candy/candy.html#data-visualization",
+    "title": "Halloween Candy Power",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\n\nCode\np1 &lt;- ggplot(dumbbell_data) +\n  geom_segment(data = other, aes(x = avg_win, y = sugar_cat,\n              xend = choco$avg_win, yend = choco$sugar_cat), \n              color = \"#aeb6bf\",\n              size = 5.5,\n              alpha = .5) +\n  geom_point(aes(x = avg_win, y = sugar_cat, color = type), size = 5, show.legend = TRUE) +\n  geom_vline(xintercept = other$mean, linetype = \"dashed\", size = .5, alpha = .8, color = \"#6DB025\")+\n  geom_vline(xintercept = choco$mean, color = \"#59260b\", linetype = \"dashed\",  size = .5, alpha = .8) +\n  scale_color_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  geom_text(data = diff,\n             aes(label = paste(\"D: \",abs(diff)), x = x_pos, y = sugar_cat), \n             color = \"#4a4e4d\",\n             size = 2.5) + \n  labs(x = \"Average Win Percentage\", y = \"Sugar Percentage in Candies\") +\n  geom_text(data = other, aes(x = other$mean - 1.5, y = \"91-100%\"), label = \"MEAN\", angle = 90, size = 2.5, color = \"#6DB025\", vjust = 1)+\n  theme_classic() +\n  theme(legend.title = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.text.y = element_text(size = 8), \n        axis.title = element_text(size = 10))\n\np2 &lt;- ggplot(col_graph_data) +\n  geom_col(aes(x = count, y = sugar_cat, fill = type), width = 0.5) +\n  scale_fill_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  scale_x_continuous(limits = c(0, 12), breaks = c(0,2,4,6,8,10,12)) +\n  labs(x = \"Number of Candies\") +\n  theme_classic() +\n  theme(legend.position = \"none\", axis.title.y = element_blank(), axis.text.y = element_blank(),\n        axis.line.y = element_blank(), axis.ticks.y = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.title = element_text(size = 10))\n\n\nmain_plot &lt;- ggarrange(p1, p2, ncol = 2, widths = c(2.2, 0.75), align = \"h\",common.legend = TRUE)\n\nannotate_figure(\n      annotate_figure(main_plot, top = text_grob(\"The number of candies per sugar level are provided to compare the denominator of average win.\", size = 8, face = \"italic\")),\n      top = text_grob(\"Average Win Percentage per Sugar Level and Chocolate-ness in Halloween Candies\", \n              size = 12, face = \"bold\"))"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#discussion",
+    "href": "dataviz/candy/candy.html#discussion",
+    "title": "Halloween Candy Power",
+    "section": "Discussion",
+    "text": "Discussion\nA lot of people like candies due to their sweetness, and chocolate candy is a staple on Halloween, so I thought it would be interesting to examine these factors in relation to win percentage. My initial hypothesis was that sweetness level is positively correlated to winning percentage, and chocolate candies would have a higher winning percentage compared to non-chocolate candies.\nTo verify this hypothesis, I created a dumbbell plot in R to visualize the different winning percentages, on average, between chocolate and non-chocolate candies, across different sugar levels. I put the sugar categories on the y-axis and the average win percentage on the x-axis, a trade-off due to information density reason since while we perceive length differences along the y-axis as more important than horizontal position (Munzner, 118), the x-axis is capable of displaying more information across multiple categories. Meanwhile, chocolate and non-chocolate candies are represented by different colors: brown for chocolate (for obvious reasons), and green for non-chocolate ones because I need a color in good contrast with the shade of brown I select to make the comparison stand out.\n\nI prefer the dumbbell plot to its alternative, a clustered bar chart in this case because since there are 10 sweetness categories, a clustered bar chart would make the chart look crowded and thus harder to interpret. Adding the actual differences in winning percentage between chocolate and non-chocolate candies (annotated as “D: …” text in the graph) in a dumbbell chart also looks cleaner compared to a bar chart. In addition, two color-coded, dashed, vertical lines representing the mean winning percentage of each candy type are added to the graph to help the audience compare the winning percentage of the candy type in each sweetness category with its mean percentage. More importantly, the distance between the 2 mean lines helps us quantify the difference in average winning percentage between chocolate and non-chocolate candies and partially answers our research question: yes, chocolate candies do have a higher average winning percentage than non-chocolate ones.\nI also include a subplot, a stacked bar chart that displays the number of candies per sweetness category to the right of the main plot. Since people tend to read from left to right in the US, the subplot is deliberately placed on the right side and is designed to have a smaller size to draw focus to the main plot. The subplot is also color-coded to differentiate between the number of candies for chocolate and non-chocolate types. The purpose of this subplot, as explained in the subtitle, is to facilitate understanding of the denominators that are used to calculate the average winning percentage. While we do see that chocolate candies tend to have higher winning percentages across sugar levels, since the main plot only displays the average percentage, it leads to the question that the winning percentage of non-chocolate candies might be made lower since it is divided by a larger number of candies or due to the effect of some outliers, etc. As a result, the subplot offers us more insight into the scale with which the average win is calculated to foster transparency. A weakness of the graph, however, is that it did not give the audience information on whether there are any outliers in winning percentages that might skew the average winning results. I also chose the stacked bar chart format so the audience can also see the total number of candies per sugar category: it can be seen that each sugar level has a relatively similar number of candies, so the comparison across sugar levels is more reliable.\nI transformed the sugar percent variable from quantitative to a new categorical variable that represents sugar level (10 – 20%, etc.). While it is possible to gauge the correlation between win percentage and sugar percentage with a quantitative sugar percent variable, I decided to turn it to categorical because (1) most people do not distinguish between 42% and 50% sugar percentage so it’s reasonable to group them into the same category (2) it is easier to get the exact difference in winning percentage across sugar categories between chocolate and non-chocolate candies, as opposed to across sugar percentages (since in this case it only makes sense to subtract the winning percentage between 2 candies with the exact same sugar percentage, which is rare). We can see from the graph that sugar level does not seem to have a significant correlation with winning percentage, however, which goes against our initial hypothesis."
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#bibliography",
+    "href": "dataviz/candy/candy.html#bibliography",
+    "title": "Halloween Candy Power",
+    "section": "Bibliography",
+    "text": "Bibliography\nMunzner, T. (2014). “Visualization Analysis and Design”. A K Peters Visualization Series, CRC Press, 2014. https://www.cs.ubc.ca/~tmm/vadbook/"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html",
+    "href": "dataviz/wastewater/wastewater.html",
+    "title": "Wastewater Treatment Plants",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html#data-context",
+    "href": "dataviz/wastewater/wastewater.html#data-context",
+    "title": "Wastewater Treatment Plants",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html#research-question",
+    "href": "dataviz/wastewater/wastewater.html#research-question",
+    "title": "Wastewater Treatment Plants",
+    "section": "Research Question",
+    "text": "Research Question\nOut of all U.S. wastewater treatment plants, which have a dilution factor lower than 10 (which is regarded as a threshold for environmental concern)?"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html#data-transformation",
+    "href": "dataviz/wastewater/wastewater.html#data-transformation",
+    "title": "Wastewater Treatment Plants",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\nUSA_wwtp &lt;- HydroWASTE_v10 %&gt;%\n  filter(CNTRY_ISO %in% \"USA\") %&gt;%\n  filter(!is.na(DF)) %&gt;%\n  mutate(threshold = if_else(DF &lt; 10, \"lower\", \"within\")) %&gt;%\n  mutate(df_cut = case_when(DF &lt; 2 ~ \"Under 2%\", \n                            DF &gt;= 2 & DF &lt;  4 ~ \"2-4%\",\n                            DF &gt;= 4 & DF &lt;  6 ~ \"4-6%\",\n                            DF &gt;= 6 & DF &lt;  8 ~ \"6-8%\",\n                            DF &gt;= 8 & DF &lt; 10 ~ \"8-10%\"))"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html#data-visualization",
+    "href": "dataviz/wastewater/wastewater.html#data-visualization",
+    "title": "Wastewater Treatment Plants",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\n\nCode\nn1 &lt;- HydroWASTE_v10 %&gt;%\n  filter(CNTRY_ISO %in% \"USA\") %&gt;%\n  nrow()\n\nn2 &lt;- USA_wwtp %&gt;% \n  filter(threshold == \"lower\") %&gt;%\n  nrow()\n\nn2*100/n1\n\n\n[1] 2.955665\n\n\n\n\nCode\nshowtext_auto()\n\nusa &lt;- st_as_sf(maps::map(\"state\", fill=TRUE, plot = FALSE))\n\nggplot(usa) +\n  geom_sf(color = \"grey80\", fill = \"#2C3E4C\", size = 0.125) +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"within\"), aes(LON_OUT, LAT_OUT), alpha = 0.1, size = 0.08, color = \"#949398FF\") +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"lower\"), aes(LON_OUT, LAT_OUT, color = df_cut), alpha = 0.8, size = 1) +\n  guides(colour = guide_legend(override.aes = list(size = 6, alpha = 0.8))) +\n  labs(title = \"Wastewater Dilution Below Regulatory Threshold (&lt;10% Dilution) in the United States\", subtitle = \"2.9% (438 out of 14,819) of US Wastewater Treatment Plants have a Dilution Factor Lower than the Threshold for Environmental Concern\", color = str_wrap(\"Regulatory Threshold\", 8), caption = \"Data: Macedo et al, 2022 (Tidy Tuesday 2022, week 38) | Graphic Design Inspired by Github Account @NearAndDistant\") +\n  rcartocolor::scale_color_carto_d(palette = \"PinkYl\") + \n  coord_sf(lims_method = \"geometry_bbox\") +\n  theme_void() +\n  theme(legend.position   = \"right\",\n        text = element_text(color = \"white\", family = \"Inter\"),\n        legend.title      = element_text(face = \"bold\"),\n        plot.title        = element_text(color = \"white\", face = \"bold\", size = 15),\n        plot.caption      = element_text(hjust = 0), \n        panel.background  = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.background   = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.margin       = margin(20,20,20,20, unit = \"pt\"))"
+  },
+  {
+    "objectID": "dataviz/wastewater/wastewater.html#credit",
+    "href": "dataviz/wastewater/wastewater.html#credit",
+    "title": "Wastewater Treatment Plants",
+    "section": "Credit",
+    "text": "Credit\nThe visualization uses the template from Github user @NearAndDistant at this link"
   },
   {
     "objectID": "ds-projects/college-earnings/index.html",

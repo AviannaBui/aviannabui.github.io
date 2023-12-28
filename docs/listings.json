@@ -10,6 +10,14 @@
     ]
   },
   {
+    "listing": "/dataviz.html",
+    "items": [
+      "/dataviz/candy/candy.html",
+      "/dataviz/museum/museum.html",
+      "/dataviz/wastewater/wastewater.html"
+    ]
+  },
+  {
     "listing": "/cs.html",
     "items": [
       "/cs-projects/pianovice/index.html",

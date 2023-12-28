@@ -1,3 +1,13 @@
 ---
 title: "Data Visualizations"
+listing:
+  contents: dataviz
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+comments: false
 ---
+

@@ -2,7 +2,7 @@
 title: "Audio Features in Taylor Swift's Grammy-Winning Albums"
 description: |
   TidyTuesday's Taylor Swift Dataset (2023)
-date: 01-09-2024
+date: 02-10-2024
 image: thumbnail-taylor.png
 categories: 
   - TidyTuesday

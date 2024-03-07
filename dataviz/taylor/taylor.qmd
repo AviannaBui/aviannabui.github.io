@@ -1,0 +1,82 @@
+---
+title: "Audio Features in Taylor Swift's Grammy-Winning Albums"
+description: |
+  TidyTuesday's Taylor Swift Dataset (2023)
+date: 01-09-2024
+image: thumbnail-taylor.png
+categories: 
+  - TidyTuesday
+about: 
+  template: marquee
+  image: thumbnail-taylor.png
+---
+
+```{r, message = F, include = F}
+library(tidyverse)
+library(taylor)
+library(ggplot2)
+library(ggradar)
+library(sysfonts)
+library(showtext)
+```
+
+## Data Context
+
+The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-10-17" target="_blank" rel="noopener">this link</a> 
+
+```{r, message = FALSE}
+taylor_all_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')
+```
+
+## Research Question
+
+*What are the differences in audio features across Taylor Swift's Grammy-winning albums?*
+
+## Data Transformation
+
+```{r, message = FALSE}
+#| code-fold: true
+grammy_songs <- taylor_all_songs %>%
+  filter(album_name %in% c("Fearless", "1989", "folklore", "Midnights")) %>%
+  mutate(album_name = fct_relevel(album_name, c("Fearless", "1989", "folklore", "Midnights"))) %>%
+  drop_na(danceability) %>%
+  group_by(album_name) %>%
+  summarize(Danceability = mean(danceability), 
+            Energy = mean(energy), 
+            Speechiness = mean(speechiness), 
+            Acousticness = mean(acousticness), 
+            Valence = mean(valence),
+            Liveness = mean(liveness))
+```
+
+## Data Visualization
+
+```{r fonts, include = FALSE}
+font_add_google("Inter")
+font_add_google("Lobster Two", "lobstertwo")
+```
+
+```{r, warning = F, message = F}
+#| code-fold: true
+showtext_auto()
+
+ggradar(grammy_songs, values.radar = c("0", "0.4", "0.8"),
+        grid.min = 0, grid.mid = 0.4, grid.max = 0.8, 
+        font.radar = "Inter",
+        grid.label.size = 5, axis.label.size = 5, legend.text.size = 10,
+        group.line.width = 0.8, group.point.size = 0,
+        group.colours = c("#EFC180", "#18A5DC", "#A5C9A5", "#242E47"), 
+        background.circle.colour = "white",
+        gridline.mid.colour = "darkgrey",
+        legend.position = "right") + 
+  labs(title = "Spotify Audio Features of Taylor Swift's Grammy-Winning Albums") +
+  theme(
+      plot.background = element_rect(fill = "#ffe9ec", color = "#ffe9ec"),
+      panel.background = element_rect(fill = "#ffe9ec", color = "#ffe9ec"),
+      legend.background = element_rect(fill = "#ffe9ec", color = "#ffe9ec"),
+      legend.key = element_rect(fill = NA, color = NA),
+      plot.title = element_text(family = "lobstertwo", size = 20, face = "bold", 
+                                color = "#2a475e", hjust = 0.5)
+  )
+```
+

@@ -12,6 +12,7 @@
   {
     "listing": "/dataviz.html",
     "items": [
+      "/dataviz/taylor/taylor.html",
       "/dataviz/candy/candy.html",
       "/dataviz/museum/museum.html",
       "/dataviz/wastewater/wastewater.html"

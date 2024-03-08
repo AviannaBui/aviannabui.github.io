@@ -25,42 +25,105 @@
     "href": "dataviz.html",
     "title": "Data Visualizations",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nAudio Features in Taylor Swift’s Grammy-Winning Albums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Taylor Swift Dataset (2023)\n\n\n\n\n\n\nFeb 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHalloween Candy Power\n\n\n\nFiveThirtyEight\n\n\n\nFiveThirtyEight’s Candy Power Ranking Dataset\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUK Museums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s UK Museums Dataset (2022)\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWastewater Treatment Plants\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Wastewater Plant Dataset (2022)\n\n\n\n\n\n\nSep 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nValentine’s Spending By Year\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Valentine’s Day Consumer Data (2024)\n\n\n\n\n\n\nMar 7, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAudio Features in Taylor Swift’s Grammy-Winning Albums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Taylor Swift Dataset (2023)\n\n\n\n\n\n\nFeb 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHalloween Candy Power\n\n\n\nFiveThirtyEight\n\n\n\nFiveThirtyEight’s Candy Power Ranking Dataset\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUK Museums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s UK Museums Dataset (2022)\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWastewater Treatment Plants\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Wastewater Plant Dataset (2022)\n\n\n\n\n\n\nSep 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "dataviz/taylor/taylor.html",
-    "href": "dataviz/taylor/taylor.html",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "objectID": "dataviz/valentine/valentine.html",
+    "href": "dataviz/valentine/valentine.html",
+    "title": "Valentine’s Spending By Year",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
+    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
   },
   {
-    "objectID": "dataviz/taylor/taylor.html#data-context",
-    "href": "dataviz/taylor/taylor.html#data-context",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "objectID": "dataviz/valentine/valentine.html#data-context",
+    "href": "dataviz/valentine/valentine.html#data-context",
+    "title": "Valentine’s Spending By Year",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
+    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
   },
   {
-    "objectID": "dataviz/taylor/taylor.html#research-question",
-    "href": "dataviz/taylor/taylor.html#research-question",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "objectID": "dataviz/valentine/valentine.html#research-question",
+    "href": "dataviz/valentine/valentine.html#research-question",
+    "title": "Valentine’s Spending By Year",
     "section": "Research Question",
-    "text": "Research Question\nWhat are the differences in audio features across Taylor Swift’s Grammy-winning albums?"
+    "text": "Research Question\nHow do Valentine Day’s consumer spending change across the years?"
   },
   {
-    "objectID": "dataviz/taylor/taylor.html#data-transformation",
-    "href": "dataviz/taylor/taylor.html#data-transformation",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "objectID": "dataviz/valentine/valentine.html#data-transformation",
+    "href": "dataviz/valentine/valentine.html#data-transformation",
+    "title": "Valentine’s Spending By Year",
     "section": "Data Transformation",
-    "text": "Data Transformation\n\n\nCode\ngrammy_songs &lt;- taylor_all_songs %&gt;%\n  filter(album_name %in% c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\")) %&gt;%\n  mutate(album_name = fct_relevel(album_name, c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\"))) %&gt;%\n  drop_na(danceability) %&gt;%\n  group_by(album_name) %&gt;%\n  summarize(Danceability = mean(danceability), \n            Energy = mean(energy), \n            Speechiness = mean(speechiness), \n            Acousticness = mean(acousticness), \n            Valence = mean(valence),\n            Liveness = mean(liveness))"
+    "text": "Data Transformation\n\ngifts_year_long &lt;- historical_spending %&gt;%\n  select(-c(PercentCelebrating, PerPerson)) %&gt;%\n  pivot_longer(cols = !Year, names_to = \"gift_type\", values_to = \"avg_amt\")"
   },
   {
-    "objectID": "dataviz/taylor/taylor.html#data-visualization",
-    "href": "dataviz/taylor/taylor.html#data-visualization",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "objectID": "dataviz/valentine/valentine.html#data-visualization",
+    "href": "dataviz/valentine/valentine.html#data-visualization",
+    "title": "Valentine’s Spending By Year",
     "section": "Data Visualization",
-    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nggradar(grammy_songs, values.radar = c(\"0\", \"0.4\", \"0.8\"),\n        grid.min = 0, grid.mid = 0.4, grid.max = 0.8, \n        font.radar = \"Inter\",\n        grid.label.size = 5, axis.label.size = 5, legend.text.size = 10,\n        group.line.width = 0.8, group.point.size = 0,\n        group.colours = c(\"#EFC180\", \"#18A5DC\", \"#A5C9A5\", \"#242E47\"), \n        background.circle.colour = \"white\",\n        gridline.mid.colour = \"darkgrey\",\n        legend.position = \"right\") + \n  labs(title = \"Spotify Audio Features of Taylor Swift's Grammy-Winning Albums\") +\n  theme(\n      plot.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      panel.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.key = element_rect(fill = NA, color = NA),\n      plot.title = element_text(family = \"lobstertwo\", size = 20, face = \"bold\", \n                                color = \"#2a475e\", hjust = 0.5)\n  )"
+    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nannot &lt;- function(x_pos, y_pos, label_string) {\n  annotate(\"text\", x = x_pos, y = y_pos,\n           label = label_string, \n           hjust = 0.5, vjust = -1,\n           size = 3, lineheight = .8,\n           fontface = \"bold\") \n}\n\nstyle = element_rect(fill = \"#fff2f2\", color = \"#fff2f2\")\n\nggplot(gifts_year_long, aes(x = Year, y = avg_amt)) +\n  geom_area(colour = NA, aes(fill = gift_type)) +\n  scale_x_continuous(breaks = c(2010,2012,2014,2016,2018,2020,2022), limits = c(2010,2022)) +\n  labs(title = \"It's Valentine: Average Spending Per Person and Gift Type\", subtitle = \"From 2010 to 2022\", y = \"Average Spending Amount\", fill = \"Gift Type\") + \n  scale_fill_manual(values = generate_palette(\"#f686bd\", \n                             modification = \"go_both_ways\", \n                             n_colours = 7)) +\n  #segment\n  geom_segment(aes(x = 2010, y = 0, xend = 2010, yend = 103)) +\n      geom_point(aes(x = 2010, y = 103.00)) +\n      annot(2010, 103.00, \"$103.00\") +\n  geom_segment(aes(x = 2012, y = 0, xend = 2012, yend = 126.03)) +\n      geom_point(aes(x = 2012, y = 126.03)) +\n      annot(2012, 126.03, \"$126.03 \\n per person avg. spend\") +\n  geom_segment(aes(x = 2014, y = 0, xend = 2014, yend = 133.91)) +\n      geom_point(aes(x = 2014, y = 133.91)) +\n      annot(2014, 133.91, \"$133.91\") +\n  geom_segment(aes(x = 2016, y = 0, xend = 2016, yend = 146.84)) +\n      geom_point(aes(x = 2016, y = 146.84)) +\n      annot(2016, 146.84, \"$146.84\") +\n  geom_segment(aes(x = 2018, y = 0, xend = 2018, yend = 143.56)) +\n      geom_point(aes(x = 2018, y = 143.56)) +\n      annot(2018, 143.56, \"$143.56\") +\n  geom_segment(aes(x = 2020, y = 0, xend = 2020, yend = 196.31)) +\n      geom_point(aes(x = 2020, y = 196.31)) +\n      annot(2020, 196.31, \"$196.31\") +\n  geom_segment(aes(x = 2022, y = 0, xend = 2022, yend = 175.41)) +\n      geom_point(aes(x = 2022, y = 175.41)) +\n      annot(2022, 175.41, \"$175.41\") +\n  theme_classic() +\n  theme(plot.title = element_text(family = \"josefin\", size = 20, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.subtitle = element_text(family = \"josefin\", size = 15, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.background = style, panel.background = style, legend.background = style)"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html",
+    "href": "dataviz/museum/museum.html",
+    "title": "UK Museums",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-context",
+    "href": "dataviz/museum/museum.html#data-context",
+    "title": "UK Museums",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#research-question",
+    "href": "dataviz/museum/museum.html#research-question",
+    "title": "UK Museums",
+    "section": "Research Question",
+    "text": "Research Question\nComparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-transformation",
+    "href": "dataviz/museum/museum.html#data-transformation",
+    "title": "UK Museums",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ndata &lt;- museums %&gt;%\n  filter(Governance != \"Unknown\") %&gt;%\n  filter(Year_closed == \"9999:9999\") %&gt;% # select museums that are still open\n  filter(str_detect(Admin_area, \"London\")) %&gt;%\n  mutate(governance_cat = case_when(str_detect(Governance, \"Government\") ~ \"Government\",\n                                    str_detect(Governance, \"Independent\") ~ \"Independent\",\n                                    Governance == \"University\" ~ \"University\")) %&gt;%\n  select(Accreditation, governance_cat, Size, starts_with(\"Area_Deprivation_index\")) %&gt;%\n  rename_with(~ sub(\"Area_Deprivation_index_\", \"\", .x), starts_with(\"Area_Deprivation_index_\")) \n \n\ndata &lt;- na.omit(data)"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-visualization",
+    "href": "dataviz/museum/museum.html#data-visualization",
+    "title": "UK Museums",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nSince there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed.\n\n\nCode\ncorrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = \"lower\", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = \"Correlation Matrix of Area Deprivation Indexes\", mar=c(0,0,1,0), tl.col=\"black\")\n\n\n\n\n\nAs seen in the plot, the health, income, and employment indexes are highly correlated. Since income is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot.\n\n\nCode\nshowtext_auto()\n\ndata %&gt;%\n  select(-c(health, employment)) %&gt;%\n  ggparcoord(\n    columns = 5:9, groupColumn = 1, scale = \"globalminmax\",\n    showPoints = FALSE, \n    title = \"Parallel Plot for London's Operating Museums Deprivation Indexes\",\n    alphaLines = 0.7\n    ) + \n  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +\n  scale_color_manual(values = c(\"#99C24D\", \"#048BA8\")) +\n  labs(subtitle = \"Index ranges from 1 (most deprived) to 10 (least deprived)\") +\n  theme_ipsum()+\n  theme(plot.title = element_text(size=15), \n        text = element_text(family = \"Inter\"))"
+  },
+  {
+    "objectID": "cs.html",
+    "href": "cs.html",
+    "title": "Computer Science Projects",
+    "section": "",
+    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPianOvice\n\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nDinosaur Game\n\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser\n\n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cs-projects/dino/index.html",
+    "href": "cs-projects/dino/index.html",
+    "title": "Dinosaur Game",
+    "section": "",
+    "text": "Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hien-Anh (Avianna) Bui",
+    "section": "",
+    "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+  },
+  {
+    "objectID": "cs-projects/pianovice/index.html",
+    "href": "cs-projects/pianovice/index.html",
+    "title": "PianOvice",
+    "section": "",
+    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
   },
   {
     "objectID": "dataviz/candy/candy.html",
@@ -112,67 +175,39 @@
     "text": "Bibliography\nMunzner, T. (2014). “Visualization Analysis and Design”. A K Peters Visualization Series, CRC Press, 2014. https://www.cs.ubc.ca/~tmm/vadbook/"
   },
   {
-    "objectID": "cs-projects/pianovice/index.html",
-    "href": "cs-projects/pianovice/index.html",
-    "title": "PianOvice",
+    "objectID": "dataviz/taylor/taylor.html",
+    "href": "dataviz/taylor/taylor.html",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
+    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Hien-Anh (Avianna) Bui",
+    "objectID": "dataviz/taylor/taylor.html#data-context",
+    "href": "dataviz/taylor/taylor.html#data-context",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "Resume\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \nHi, my name is Avianna (she/her). I am a junior at Macalester College pursuing a Data Science major along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices.\nPlease check out my Projects and Data Visualizations tabs for examples of my work!\n\nEducation\nMacalester College | St. Paul, Minnesota B.A in Data Science, expected May 2025"
+    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
-    "objectID": "cs-projects/dino/index.html",
-    "href": "cs-projects/dino/index.html",
-    "title": "Dinosaur Game",
-    "section": "",
-    "text": "Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score."
-  },
-  {
-    "objectID": "cs.html",
-    "href": "cs.html",
-    "title": "Computer Science Projects",
-    "section": "",
-    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPianOvice\n\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nDinosaur Game\n\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser\n\n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html",
-    "href": "dataviz/museum/museum.html",
-    "title": "UK Museums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#data-context",
-    "href": "dataviz/museum/museum.html#data-context",
-    "title": "UK Museums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#research-question",
-    "href": "dataviz/museum/museum.html#research-question",
-    "title": "UK Museums",
+    "objectID": "dataviz/taylor/taylor.html#research-question",
+    "href": "dataviz/taylor/taylor.html#research-question",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "Research Question",
-    "text": "Research Question\nComparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London"
+    "text": "Research Question\nWhat are the differences in audio features across Taylor Swift’s Grammy-winning albums?"
   },
   {
-    "objectID": "dataviz/museum/museum.html#data-transformation",
-    "href": "dataviz/museum/museum.html#data-transformation",
-    "title": "UK Museums",
+    "objectID": "dataviz/taylor/taylor.html#data-transformation",
+    "href": "dataviz/taylor/taylor.html#data-transformation",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "Data Transformation",
-    "text": "Data Transformation\n\n\nCode\ndata &lt;- museums %&gt;%\n  filter(Governance != \"Unknown\") %&gt;%\n  filter(Year_closed == \"9999:9999\") %&gt;% # select museums that are still open\n  filter(str_detect(Admin_area, \"London\")) %&gt;%\n  mutate(governance_cat = case_when(str_detect(Governance, \"Government\") ~ \"Government\",\n                                    str_detect(Governance, \"Independent\") ~ \"Independent\",\n                                    Governance == \"University\" ~ \"University\")) %&gt;%\n  select(Accreditation, governance_cat, Size, starts_with(\"Area_Deprivation_index\")) %&gt;%\n  rename_with(~ sub(\"Area_Deprivation_index_\", \"\", .x), starts_with(\"Area_Deprivation_index_\")) \n \n\ndata &lt;- na.omit(data)"
+    "text": "Data Transformation\n\n\nCode\ngrammy_songs &lt;- taylor_all_songs %&gt;%\n  filter(album_name %in% c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\")) %&gt;%\n  mutate(album_name = fct_relevel(album_name, c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\"))) %&gt;%\n  drop_na(danceability) %&gt;%\n  group_by(album_name) %&gt;%\n  summarize(Danceability = mean(danceability), \n            Energy = mean(energy), \n            Speechiness = mean(speechiness), \n            Acousticness = mean(acousticness), \n            Valence = mean(valence),\n            Liveness = mean(liveness))"
   },
   {
-    "objectID": "dataviz/museum/museum.html#data-visualization",
-    "href": "dataviz/museum/museum.html#data-visualization",
-    "title": "UK Museums",
+    "objectID": "dataviz/taylor/taylor.html#data-visualization",
+    "href": "dataviz/taylor/taylor.html#data-visualization",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "Data Visualization",
-    "text": "Data Visualization\nSince there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed.\n\n\nCode\ncorrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = \"lower\", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = \"Correlation Matrix of Area Deprivation Indexes\", mar=c(0,0,1,0), tl.col=\"black\")\n\n\n\n\n\nAs seen in the plot, the health, income, and employment indexes are highly correlated. Since income is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot.\n\n\nCode\nshowtext_auto()\n\ndata %&gt;%\n  select(-c(health, employment)) %&gt;%\n  ggparcoord(\n    columns = 5:9, groupColumn = 1, scale = \"globalminmax\",\n    showPoints = FALSE, \n    title = \"Parallel Plot for London's Operating Museums Deprivation Indexes\",\n    alphaLines = 0.7\n    ) + \n  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +\n  scale_color_manual(values = c(\"#99C24D\", \"#048BA8\")) +\n  labs(subtitle = \"Index ranges from 1 (most deprived) to 10 (least deprived)\") +\n  theme_ipsum()+\n  theme(plot.title = element_text(size=15), \n        text = element_text(family = \"Inter\"))"
+    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nggradar(grammy_songs, values.radar = c(\"0\", \"0.4\", \"0.8\"),\n        grid.min = 0, grid.mid = 0.4, grid.max = 0.8, \n        font.radar = \"Inter\",\n        grid.label.size = 5, axis.label.size = 5, legend.text.size = 10,\n        group.line.width = 0.8, group.point.size = 0,\n        group.colours = c(\"#EFC180\", \"#18A5DC\", \"#A5C9A5\", \"#242E47\"), \n        background.circle.colour = \"white\",\n        gridline.mid.colour = \"darkgrey\",\n        legend.position = \"right\") + \n  labs(title = \"Spotify Audio Features of Taylor Swift's Grammy-Winning Albums\") +\n  theme(\n      plot.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      panel.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.key = element_rect(fill = NA, color = NA),\n      plot.title = element_text(family = \"lobstertwo\", size = 20, face = \"bold\", \n                                color = \"#2a475e\", hjust = 0.5)\n  )"
   },
   {
     "objectID": "dataviz/wastewater/wastewater.html",

@@ -1,10 +1,15 @@
 /*-- scss:defaults --*/
 
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap';
 
 $primary: #BD4C85 !default;
 
 $link-color: #B94366;
+
+body {
+  font-family: Poppins, serif;
+}
 
 /*-- scss:rules --*/
 

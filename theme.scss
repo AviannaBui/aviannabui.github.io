@@ -2,17 +2,18 @@
 
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap';
 
 $primary: #BD4C85 !default;
 
 $link-color: #B94366;
 
-$font-family-sans-serif: Poppins !default;
+$font-family-sans-serif: Catamaran !default;
 
 /*-- scss:rules --*/
 
 .navbar-brand
 {
-  font-family: 'Montserrat', serif;
+  font-family: 'Poppins', serif;
   font-size: 25px !important;
 }

@@ -7,9 +7,6 @@ about:
   image-shape: round
   image: images/profile.jpg
   links:
-    - icon: person-workspace
-      text: Resume
-      href: https://drive.google.com/file/d/1NZAdPXWJ7W5Gy4htkjjBCOPpnb9I-yBn/view?usp=sharing  
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/avianna-bui/
@@ -20,14 +17,20 @@ about:
 
 :::{#introduction}
 
-Hi, my name is Avianna (she/her). I am a junior at <a href="https://www.macalester.edu/" target="_blank" rel="noopener">Macalester College</a> pursuing a <a href="https://www.macalester.edu/mscs/majorsminors/#program-3827" target="_blank" rel="noopener">Data Science major</a> along with Psychology, Educational Studies, and Cognitive Science minors. With this academic background, I draw on cognitive psychology and educational frameworks in my data analysis to create responsible data narratives, accessible data visualizations, and multi-perspective data insights to inform and impact sociocultural, business, and educational practices. 
+Hi, my name is Avianna (she/her). I’m passionate about **cognitively-informed BI** solutions and **people analytics**.
 
-Please check out my Projects and Data Visualizations tabs for examples of my work!
+I'm a senior at <a href="https://www.macalester.edu/" target="_blank" rel="noopener">Macalester College</a> pursuing a <a href="https://www.macalester.edu/mscs/majorsminors/#program-3827" target="_blank" rel="noopener">Data Science major</a> along with Psychology, Education, and Cognitive Science minors. This background drives me to draw on cognitive psychology and learning frameworks to deliver actionable data insights and accessible visualizations for business decision-making. My eclectic pursuit hones my data skills and knowledge across multiple industries, from developing business analysis, dashboards, and data management in **HR** and **healthcare** consulting companies to currently performing data and statistical analyses on **aviation** operational and customer service metrics at Endeavor Air. 
 
-### Education
+Check out my Projects and Data Visualizations tabs for examples of my work!
 
-Macalester College | *St. Paul, Minnesota*<br>
-B.A in Data Science, expected May 2025
+### Recent Experiences
+
+**Endeavor Air** | Operational Analysis and Performance Intern 
+
+**Macalester College** | Machine Learning & Data Science Preceptor 
+
+**Panacea Healthcare Solutions** | Healthcare Data Intern 
+
 
 :::
 

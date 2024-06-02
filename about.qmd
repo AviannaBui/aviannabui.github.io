@@ -1,9 +1,9 @@
 ---
-title: "Hien-Anh (Avianna) Bui"
+title: "Hi, I'm Hien-Anh!"
 about:
   id: introduction
-  template: trestles
-  image-width: 20em
+  template: broadside
+  image-width: 12em
   image-shape: round
   image: images/profile.jpg
   links:
@@ -17,7 +17,7 @@ about:
 
 :::{#introduction}
 
-Hi, my name is Avianna (she/her). I’m passionate about **cognitively-informed BI** solutions and **people analytics**.
+Career interest: **business intelligence** & **people analytics**
 
 I'm a senior at <a href="https://www.macalester.edu/" target="_blank" rel="noopener">Macalester College</a> pursuing a <a href="https://www.macalester.edu/mscs/majorsminors/#program-3827" target="_blank" rel="noopener">Data Science major</a> along with Psychology, Education, and Cognitive Science minors. This background drives me to draw on cognitive psychology and learning frameworks to deliver actionable data insights and accessible visualizations for business decision-making. My eclectic pursuit hones my data skills and knowledge across multiple industries, from developing business analysis, dashboards, and data management in **HR** and **healthcare** consulting companies to currently performing data and statistical analyses on **aviation** operational and customer service metrics at Endeavor Air. 
 

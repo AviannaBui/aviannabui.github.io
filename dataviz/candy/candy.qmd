@@ -1,11 +1,11 @@
 ---
-title: "Halloween Candy Power"
+title: "Halloween Candies' Win Percentage"
 description: |
-  FiveThirtyEight's Candy Power Ranking Dataset
+  Do people prefer sweet chocolate candies?
 date: 09-20-2023
 image: thumbnail-candy.png
 categories: 
-  - FiveThirtyEight
+  - R
 about: 
   template: marquee
   image: thumbnail-candy.png

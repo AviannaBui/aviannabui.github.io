@@ -1,12 +1,13 @@
 ---
 title: "Predicting Song Popularity through Audio Features"
 description: |
-  Association between Audio Features, Popularity, and Listeners’ Preferences
+  LASSO regression, Random Forest, GAM, K-Means, Cross-validation, Correlation Analysis
 date: 05-12-2023
 image: thumbnail.png
 categories:
+  - R
   - Machine Learning
-  - Arts
+  - Correlation Analysis
 about: 
   template: solana
   image: thumbnail.png

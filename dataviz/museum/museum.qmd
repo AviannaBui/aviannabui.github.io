@@ -1,11 +1,11 @@
 ---
 title: "UK Museums"
 description: |
-  TidyTuesday's UK Museums Dataset (2022)
+  Are larger museums located in more developed neighborhoods?
 date: 11-24-2022
 image: thumbnail-museum.png
 categories: 
-  - TidyTuesday
+  - R
 about: 
   template: marquee
   image: thumbnail-museum.png
@@ -31,20 +31,19 @@ museums <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 
 ## Research Question
 
-*Comparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London*
+*Comparing Area Deprivation Indexes Between Large-Sized and Small-to-Medium-Sized  Operating Museums in London*
 
 ## Data Transformation
 
 ```{r, message = FALSE}
 #| code-fold: true
 data <- museums %>%
-  filter(Governance != "Unknown") %>%
+  filter(Size != "unknown") %>%
   filter(Year_closed == "9999:9999") %>% # select museums that are still open
   filter(str_detect(Admin_area, "London")) %>%
-  mutate(governance_cat = case_when(str_detect(Governance, "Government") ~ "Government",
-                                    str_detect(Governance, "Independent") ~ "Independent",
-                                    Governance == "University" ~ "University")) %>%
-  select(Accreditation, governance_cat, Size, starts_with("Area_Deprivation_index")) %>%
+  mutate(size_cat = case_when(Size %in% c("huge", "large") ~ "Large",
+                              Size %in% c("medium", "small") ~ "Small/Medium")) %>%
+  select(Accreditation, size_cat, Size, starts_with("Area_Deprivation_index")) %>%
   rename_with(~ sub("Area_Deprivation_index_", "", .x), starts_with("Area_Deprivation_index_")) 
  
 
@@ -73,15 +72,17 @@ showtext_auto()
 data %>%
   select(-c(health, employment)) %>%
   ggparcoord(
-    columns = 5:9, groupColumn = 1, scale = "globalminmax",
+    columns = 5:9, groupColumn = 2, scale = "globalminmax",
     showPoints = FALSE, 
     title = "Parallel Plot for London's Operating Museums Deprivation Indexes",
     alphaLines = 0.7
     ) + 
   scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +
-  scale_color_manual(values = c("#99C24D", "#048BA8")) +
-  labs(subtitle = "Index ranges from 1 (most deprived) to 10 (least deprived)") +
+  scale_color_manual(values = c("darkred", "lightgray")) +
+  labs(subtitle = "Index ranges from 1 (most deprived) to 10 (least deprived)",
+       color = "Museum Size") +
   theme_ipsum()+
   theme(plot.title = element_text(size=15), 
         text = element_text(family = "Inter"))
 ```
+Operating, larger-sized museums in London are more likely to locate in areas with lower housing availability and relatively high education access.  

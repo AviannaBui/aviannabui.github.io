@@ -1,12 +1,11 @@
 ---
 title: "PianOvice"
 description: |
-  Collab project with Kien Nguyen (Macalester '25), featuring an interactive piano interface for melody composition and harmonization
+  An interactive piano interface for melody composition and harmonization
 date: 12-10-2022
 image: thumbnail.png
 categories:
   - Java
-  - Arts
 about: 
   template: solana
   image: thumbnail.png
@@ -16,4 +15,6 @@ about:
       href: https://github.com/AviannaBui/PianOvice
 ---
 
-Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use <a href="https://mac-comp127.github.io/kilt-graphics/index.html" target="_blank" rel="noopener">kilt-graphics</a>, a graphic library developed by the <a href="https://www.macalester.edu/mscs/" target="_blank" rel="noopener">Mathematics, Statistics, and Computer Science (MSCS)</a> department in Macalester College.
+The project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use <a href="https://mac-comp127.github.io/kilt-graphics/index.html" target="_blank" rel="noopener">kilt-graphics</a>, a graphic library developed by the <a href="https://www.macalester.edu/mscs/" target="_blank" rel="noopener">Mathematics, Statistics, and Computer Science (MSCS)</a> department in Macalester College.
+
+Collab project with Kien Nguyen (Macalester '25)

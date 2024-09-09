@@ -1,11 +1,11 @@
 ---
 title: "Valentine's Spending By Year"
 description: |
-  TidyTuesday's Valentine's Day Consumer Data (2024)
+  How do Valentine Day's consumer spending change over time?
 date: 03-07-2024
 image: thumbnail-valentine.png
 categories: 
-  - TidyTuesday
+  - R
 about: 
   template: marquee
   image: thumbnail-valentine.png
@@ -96,3 +96,5 @@ ggplot(gifts_year_long, aes(x = Year, y = avg_amt)) +
                                 color = "#311a25", hjust = 0.5),
         plot.background = style, panel.background = style, legend.background = style)
 ```
+
+Between 2010 to 2022, Per-person average spending on Valentine Day has been on the rise, peaking in 2020. Jewelry and night-out remains the two categories with highest spending, with jewelry spending in recent years increasing by a moderate amount compared to its 2010 number. 

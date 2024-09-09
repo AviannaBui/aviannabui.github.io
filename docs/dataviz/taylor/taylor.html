@@ -123,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -189,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title">
 <h1 class="title">Audio Features in Taylor Swift’s Grammy-Winning Albums</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">TidyTuesday</div>
+    <div class="quarto-category">R</div>
   </div>
   </div>
 <div>
@@ -232,8 +232,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">Energy =</span> <span class="fu">mean</span>(energy), </span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">Speechiness =</span> <span class="fu">mean</span>(speechiness), </span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">Acousticness =</span> <span class="fu">mean</span>(acousticness), </span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">Valence =</span> <span class="fu">mean</span>(valence),</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">Liveness =</span> <span class="fu">mean</span>(liveness))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">Instrumentalness =</span> <span class="fu">mean</span>(instrumentalness),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">Valence =</span> <span class="fu">mean</span>(valence))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -247,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggradar</span>(grammy_songs, <span class="at">values.radar =</span> <span class="fu">c</span>(<span class="st">"0"</span>, <span class="st">"0.4"</span>, <span class="st">"0.8"</span>),</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">grid.min =</span> <span class="dv">0</span>, <span class="at">grid.mid =</span> <span class="fl">0.4</span>, <span class="at">grid.max =</span> <span class="fl">0.8</span>, </span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">font.radar =</span> <span class="st">"Inter"</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">grid.label.size =</span> <span class="dv">5</span>, <span class="at">axis.label.size =</span> <span class="dv">5</span>, <span class="at">legend.text.size =</span> <span class="dv">10</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">grid.label.size =</span> <span class="dv">4</span>, <span class="at">axis.label.size =</span> <span class="dv">4</span>, <span class="at">legend.text.size =</span> <span class="dv">8</span>,</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">group.line.width =</span> <span class="fl">0.8</span>, <span class="at">group.point.size =</span> <span class="dv">0</span>,</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">group.colours =</span> <span class="fu">c</span>(<span class="st">"#EFC180"</span>, <span class="st">"#18A5DC"</span>, <span class="st">"#A5C9A5"</span>, <span class="st">"#242E47"</span>), </span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">background.circle.colour =</span> <span class="st">"white"</span>,</span>
@@ -271,6 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>The most variations between the albums lie in their energy level and acousticness, with “1989” having the highest average energy score and “folklore” ranking the highest in acousticness. All 4 albums have relatively high average danceability (&gt; 0.5) while scoring low in instrumentalness and speechiness.</p>
 
 
 </section>

@@ -1,11 +1,11 @@
 ---
 title: "Wastewater Treatment Plants"
 description: |
-  TidyTuesday's Wastewater Plant Dataset (2022)
+  Which U.S. wastewater treatment plants might pose an environmental concern?
 date: 09-24-2022
 image: thumbnail-wastewater.png
 categories: 
-  - TidyTuesday
+  - R
 about: 
   template: marquee
   image: thumbnail-wastewater.png
@@ -90,6 +90,8 @@ ggplot(usa) +
         plot.background   = element_rect(fill = "#21242b", color = "#21242b"),
         plot.margin       = margin(20,20,20,20, unit = "pt"))
 ```
+
+South Central region (especially around Northwest Texas region) and California have a higher concentration of wastewater treatment plants with a dilution factor below regulatory threshold. 
 
 ## Credit
 

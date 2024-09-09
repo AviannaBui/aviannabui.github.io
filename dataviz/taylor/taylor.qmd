@@ -5,13 +5,13 @@ description: |
 date: 02-10-2024
 image: thumbnail-taylor.png
 categories: 
-  - TidyTuesday
+  - R
 about: 
   template: marquee
   image: thumbnail-taylor.png
 ---
 
-```{r, message = F, include = F}
+```{r, message = F, warning = F, include = F}
 library(tidyverse)
 library(taylor)
 library(ggplot2)
@@ -24,7 +24,7 @@ library(showtext)
 
 The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-10-17" target="_blank" rel="noopener">this link</a> 
 
-```{r, message = FALSE}
+```{r, message = FALSE, warning= FALSE}
 taylor_all_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')
 ```
 
@@ -45,8 +45,8 @@ grammy_songs <- taylor_all_songs %>%
             Energy = mean(energy), 
             Speechiness = mean(speechiness), 
             Acousticness = mean(acousticness), 
-            Valence = mean(valence),
-            Liveness = mean(liveness))
+            Instrumentalness = mean(instrumentalness),
+            Valence = mean(valence))
 ```
 
 ## Data Visualization
@@ -63,7 +63,7 @@ showtext_auto()
 ggradar(grammy_songs, values.radar = c("0", "0.4", "0.8"),
         grid.min = 0, grid.mid = 0.4, grid.max = 0.8, 
         font.radar = "Inter",
-        grid.label.size = 5, axis.label.size = 5, legend.text.size = 10,
+        grid.label.size = 4, axis.label.size = 4, legend.text.size = 8,
         group.line.width = 0.8, group.point.size = 0,
         group.colours = c("#EFC180", "#18A5DC", "#A5C9A5", "#242E47"), 
         background.circle.colour = "white",
@@ -79,3 +79,5 @@ ggradar(grammy_songs, values.radar = c("0", "0.4", "0.8"),
                                 color = "#2a475e", hjust = 0.5)
   )
 ```
+
+The most variations between the albums lie in their energy level and acousticness, with "1989" having the highest average energy score and "folklore" ranking the highest in acousticness. All 4 albums have relatively high average danceability (> 0.5) while scoring low in instrumentalness and speechiness. 

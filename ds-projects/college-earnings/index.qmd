@@ -1,12 +1,13 @@
 ---
 title: "Regression Analysis of College Earnings and Expenses"
 description: |
-  Association Between Colleges' Median Earnings with Instructional Expenses and Control Type 
+  Linear regression, logistic regression, residual analysis, hypothesis testing
 date: 12-15-2021
 image: thumbnail.png
 categories:
+  - R
   - Statistical Modeling
-  - Education
+  - Regression Analysis
 about: 
   template: solana
   image: thumbnail.png

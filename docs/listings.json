@@ -1,17 +1,15 @@
 [
   {
-    "listing": "/ds.html",
+    "listing": "/cs.html",
     "items": [
-      "/ds-projects/tableau-starbucks/index.html",
-      "/ds-projects/edtech/index.html",
-      "/ds-projects/ml-music/index.html",
-      "/ds-projects/mh-substance-use/index.html",
-      "/ds-projects/college-earnings/index.html"
+      "/cs-projects/pianovice/index.html",
+      "/cs-projects/dino/index.html"
     ]
   },
   {
     "listing": "/dataviz.html",
     "items": [
+      "/dataviz/coffee/coffee.html",
       "/dataviz/valentine/valentine.html",
       "/dataviz/taylor/taylor.html",
       "/dataviz/candy/candy.html",
@@ -20,10 +18,13 @@
     ]
   },
   {
-    "listing": "/cs.html",
+    "listing": "/ds.html",
     "items": [
-      "/cs-projects/pianovice/index.html",
-      "/cs-projects/dino/index.html"
+      "/ds-projects/tableau-starbucks/index.html",
+      "/ds-projects/edtech/index.html",
+      "/ds-projects/ml-music/index.html",
+      "/ds-projects/mh-substance-use/index.html",
+      "/ds-projects/college-earnings/index.html"
     ]
   }
 ]

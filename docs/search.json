@@ -1,213 +1,31 @@
 [
   {
-    "objectID": "ds.html",
-    "href": "ds.html",
-    "title": "Data Science Projects",
-    "section": "",
-    "text": "My data science projects apply machine learning algorithms, statistical models, and data visualizations to discover trends and tell a story across multiple domains of psychology, education, health, business, and arts. These projects demonstrate my growth as a Data Scientist through the knowledge I learn in college courses including Data Visualization, Intermediate Data Science, Statistical Machine Learning, and Statistical Modeling.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nStarbucks’ Tableau Dashboard\n\n\n\nInteractive Visualization\n\n\nHealth\n\n\nBusiness\n\n\n\nStarbucks Popularity in the USA and Drinks’ Nutrition Comparison for Cardiovascular Health\n\n\n\n\n\n\nDec 18, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Edtech for Mental Wellbeing\n\n\n\nEducation\n\n\nPsychology\n\n\nHealth\n\n\n\nCollab project with Na Nguyen (Macalester ’25) on building mental health-conscious Edtech platforms\n\n\n\n\n\n\nDec 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Song Popularity through Audio Features\n\n\n\nMachine Learning\n\n\nArts\n\n\n\nAssociation between Audio Features, Popularity, and Listeners’ Preferences\n\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Substance Use and Demographics Relate To Mental Health\n\n\n\nPsychology\n\n\nHealth\n\n\n\nCollab Project with Kaylee Do (Macalester ’22) on Mental Health Diagnoses in Treatment Facilities\n\n\n\n\n\n\nDec 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRegression Analysis of College Earnings and Expenses\n\n\n\nStatistical Modeling\n\n\nEducation\n\n\n\nAssociation Between Colleges’ Median Earnings with Instructional Expenses and Control Type\n\n\n\n\n\n\nDec 15, 2021\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "ds-projects/ml-music/index.html",
-    "href": "ds-projects/ml-music/index.html",
-    "title": "Predicting Song Popularity through Audio Features",
-    "section": "",
-    "text": "What aspect do hit songs share? With the increasing globalization of the US music industry and the rise of experimental music, it becomes more challenging to determine what features distinguish hits from less popular songs. As music continues to play an integral role in our lives, whether for recreational purposes or as a mechanism for emotional outlets, it is crucial to understand the musical mechanisms that affect their popularity. By examining the factors that influence the success of a song over time, we can gain a deeper insight into music preferences and listeners’ behavior in the United States.\nTo explore the relationship between audio features and popularity, my supervised learning analysis examines the audio features that are the strongest predictors of Spotify Track Popularity by fitting a LASSO, GAM, and a random forest model. I also apply K-means Clustering to investigate if there exist any trends in the dataset across decades and audio features. These analyses allow me to gain a deeper insight into changing music preferences or composition trends in the US music industry over time."
-  },
-  {
-    "objectID": "ds-projects/edtech/index.html",
-    "href": "ds-projects/edtech/index.html",
-    "title": "Building Edtech for Mental Wellbeing",
-    "section": "",
-    "text": "Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape."
-  },
-  {
-    "objectID": "dataviz.html",
-    "href": "dataviz.html",
-    "title": "Data Visualizations",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nValentine’s Spending By Year\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Valentine’s Day Consumer Data (2024)\n\n\n\n\n\n\nMar 7, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAudio Features in Taylor Swift’s Grammy-Winning Albums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Taylor Swift Dataset (2023)\n\n\n\n\n\n\nFeb 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHalloween Candy Power\n\n\n\nFiveThirtyEight\n\n\n\nFiveThirtyEight’s Candy Power Ranking Dataset\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUK Museums\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s UK Museums Dataset (2022)\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWastewater Treatment Plants\n\n\n\nTidyTuesday\n\n\n\nTidyTuesday’s Wastewater Plant Dataset (2022)\n\n\n\n\n\n\nSep 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "dataviz/valentine/valentine.html",
-    "href": "dataviz/valentine/valentine.html",
-    "title": "Valentine’s Spending By Year",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
-  },
-  {
-    "objectID": "dataviz/valentine/valentine.html#data-context",
-    "href": "dataviz/valentine/valentine.html#data-context",
-    "title": "Valentine’s Spending By Year",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
-  },
-  {
-    "objectID": "dataviz/valentine/valentine.html#research-question",
-    "href": "dataviz/valentine/valentine.html#research-question",
-    "title": "Valentine’s Spending By Year",
-    "section": "Research Question",
-    "text": "Research Question\nHow do Valentine Day’s consumer spending change across the years?"
-  },
-  {
-    "objectID": "dataviz/valentine/valentine.html#data-transformation",
-    "href": "dataviz/valentine/valentine.html#data-transformation",
-    "title": "Valentine’s Spending By Year",
-    "section": "Data Transformation",
-    "text": "Data Transformation\n\ngifts_year_long &lt;- historical_spending %&gt;%\n  select(-c(PercentCelebrating, PerPerson)) %&gt;%\n  pivot_longer(cols = !Year, names_to = \"gift_type\", values_to = \"avg_amt\")"
-  },
-  {
-    "objectID": "dataviz/valentine/valentine.html#data-visualization",
-    "href": "dataviz/valentine/valentine.html#data-visualization",
-    "title": "Valentine’s Spending By Year",
-    "section": "Data Visualization",
-    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nannot &lt;- function(x_pos, y_pos, label_string) {\n  annotate(\"text\", x = x_pos, y = y_pos,\n           label = label_string, \n           hjust = 0.5, vjust = -1,\n           size = 3, lineheight = .8,\n           fontface = \"bold\") \n}\n\nstyle = element_rect(fill = \"#fff2f2\", color = \"#fff2f2\")\n\nggplot(gifts_year_long, aes(x = Year, y = avg_amt)) +\n  geom_area(colour = NA, aes(fill = gift_type)) +\n  scale_x_continuous(breaks = c(2010,2012,2014,2016,2018,2020,2022), limits = c(2010,2022)) +\n  labs(title = \"It's Valentine: Average Spending Per Person and Gift Type\", subtitle = \"From 2010 to 2022\", y = \"Average Spending Amount\", fill = \"Gift Type\") + \n  scale_fill_manual(values = generate_palette(\"#f686bd\", \n                             modification = \"go_both_ways\", \n                             n_colours = 7)) +\n  #segment\n  geom_segment(aes(x = 2010, y = 0, xend = 2010, yend = 103)) +\n      geom_point(aes(x = 2010, y = 103.00)) +\n      annot(2010, 103.00, \"$103.00\") +\n  geom_segment(aes(x = 2012, y = 0, xend = 2012, yend = 126.03)) +\n      geom_point(aes(x = 2012, y = 126.03)) +\n      annot(2012, 126.03, \"$126.03 \\n per person avg. spend\") +\n  geom_segment(aes(x = 2014, y = 0, xend = 2014, yend = 133.91)) +\n      geom_point(aes(x = 2014, y = 133.91)) +\n      annot(2014, 133.91, \"$133.91\") +\n  geom_segment(aes(x = 2016, y = 0, xend = 2016, yend = 146.84)) +\n      geom_point(aes(x = 2016, y = 146.84)) +\n      annot(2016, 146.84, \"$146.84\") +\n  geom_segment(aes(x = 2018, y = 0, xend = 2018, yend = 143.56)) +\n      geom_point(aes(x = 2018, y = 143.56)) +\n      annot(2018, 143.56, \"$143.56\") +\n  geom_segment(aes(x = 2020, y = 0, xend = 2020, yend = 196.31)) +\n      geom_point(aes(x = 2020, y = 196.31)) +\n      annot(2020, 196.31, \"$196.31\") +\n  geom_segment(aes(x = 2022, y = 0, xend = 2022, yend = 175.41)) +\n      geom_point(aes(x = 2022, y = 175.41)) +\n      annot(2022, 175.41, \"$175.41\") +\n  theme_classic() +\n  theme(plot.title = element_text(family = \"josefin\", size = 20, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.subtitle = element_text(family = \"josefin\", size = 15, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.background = style, panel.background = style, legend.background = style)"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html",
-    "href": "dataviz/museum/museum.html",
-    "title": "UK Museums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#data-context",
-    "href": "dataviz/museum/museum.html#data-context",
-    "title": "UK Museums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#research-question",
-    "href": "dataviz/museum/museum.html#research-question",
-    "title": "UK Museums",
-    "section": "Research Question",
-    "text": "Research Question\nComparing Area Deprivation Indexes Between Accredited and Unaccredited Operating Museums in London"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#data-transformation",
-    "href": "dataviz/museum/museum.html#data-transformation",
-    "title": "UK Museums",
-    "section": "Data Transformation",
-    "text": "Data Transformation\n\n\nCode\ndata &lt;- museums %&gt;%\n  filter(Governance != \"Unknown\") %&gt;%\n  filter(Year_closed == \"9999:9999\") %&gt;% # select museums that are still open\n  filter(str_detect(Admin_area, \"London\")) %&gt;%\n  mutate(governance_cat = case_when(str_detect(Governance, \"Government\") ~ \"Government\",\n                                    str_detect(Governance, \"Independent\") ~ \"Independent\",\n                                    Governance == \"University\" ~ \"University\")) %&gt;%\n  select(Accreditation, governance_cat, Size, starts_with(\"Area_Deprivation_index\")) %&gt;%\n  rename_with(~ sub(\"Area_Deprivation_index_\", \"\", .x), starts_with(\"Area_Deprivation_index_\")) \n \n\ndata &lt;- na.omit(data)"
-  },
-  {
-    "objectID": "dataviz/museum/museum.html#data-visualization",
-    "href": "dataviz/museum/museum.html#data-visualization",
-    "title": "UK Museums",
-    "section": "Data Visualization",
-    "text": "Data Visualization\nSince there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed.\n\n\nCode\ncorrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = \"lower\", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = \"Correlation Matrix of Area Deprivation Indexes\", mar=c(0,0,1,0), tl.col=\"black\")\n\n\n\n\n\n\n\n\n\nAs seen in the plot, the health, income, and employment indexes are highly correlated. Since income is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot.\n\n\nCode\nshowtext_auto()\n\ndata %&gt;%\n  select(-c(health, employment)) %&gt;%\n  ggparcoord(\n    columns = 5:9, groupColumn = 1, scale = \"globalminmax\",\n    showPoints = FALSE, \n    title = \"Parallel Plot for London's Operating Museums Deprivation Indexes\",\n    alphaLines = 0.7\n    ) + \n  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +\n  scale_color_manual(values = c(\"#99C24D\", \"#048BA8\")) +\n  labs(subtitle = \"Index ranges from 1 (most deprived) to 10 (least deprived)\") +\n  theme_ipsum()+\n  theme(plot.title = element_text(size=15), \n        text = element_text(family = \"Inter\"))"
-  },
-  {
-    "objectID": "cs.html",
-    "href": "cs.html",
-    "title": "Computer Science Projects",
-    "section": "",
-    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPianOvice\n\n\n\n\n\n\nJava\n\n\nArts\n\n\n\nCollab project with Kien Nguyen (Macalester ’25), featuring an interactive piano interface for melody composition and harmonization \n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nDinosaur Game\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\nCollab project with Trung Dam (Macalester ’25) that recreates the Dinosaur Game built into Google Chrome’s web browser \n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cs-projects/dino/index.html",
-    "href": "cs-projects/dino/index.html",
-    "title": "Dinosaur Game",
-    "section": "",
-    "text": "Our project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Hi, I’m Hien-Anh (Avianna)!",
     "section": "",
-    "text": "Career interest: human-centered data analytics & business intelligence\nI’m a senior at Macalester College pursuing a Data Science major along with Psychology and Education minors. This background drives me to draw on cognitive psychology and learning frameworks to deliver insightful data analysis and actionable BI dashboards for business decision-making. I’ve built my data science and problem-solving skills across multiple industries, including HR and healthcare consulting. Currently, I am working as the Operational Analytics Intern at Endeavor Air, a wholly-owned subsidiary of Delta Air Lines.\nCheck out my Projects and Data Visualizations tabs for examples of my work!\n\nProfessional Experiences\nEndeavor Air | Operational Analytics Intern\nMacalester College | Machine Learning & Data Science Teaching Assistant\nPanacea Healthcare Solutions | Ex-Healthcare Data Intern\n\n\n  \n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github"
+    "text": "I’m an aspiring human-centered data scientist & business analyst with professional experience in aviation, healthcare, and HR analytics. Blending my educational psychology learning with my data science expertise, I foster data-driven decision-making and strategic growth by drawing on cognitive science and learning frameworks to deliver insightful data analysis and actionable insights.\n\nProfessional Experiences\nEndeavor Air, subsidiary of Delta Air Lines | Operational Analytics Intern | 2024 - present\nMacalester College | Machine Learning & Data Science Teaching Assistant | 2022 - 2024\nPanacea Healthcare Solutions | Healthcare Data Intern | 2023\n\n\nEducation\nMacalester College | B.A. expected May 2025 | GPA: 4.0 Data Science major, Psychology and Education minors\n\n\n  \n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github"
   },
   {
-    "objectID": "cs-projects/pianovice/index.html",
-    "href": "cs-projects/pianovice/index.html",
-    "title": "PianOvice",
+    "objectID": "ds-projects/tableau-starbucks/index.html",
+    "href": "ds-projects/tableau-starbucks/index.html",
+    "title": "Starbucks’ Tableau Dashboard",
     "section": "",
-    "text": "Our project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College."
+    "text": "Starbucks is the largest coffee chain in the United States regarding physical units, with over 15,000 stores in the U.S. in 2022. Despite this immense popularity, many Starbucks drinks are unhealthy for our heart. Combined with the fact that heart disease is the leading cause of death in the U.S., investigating Starbucks’ popularity and nutritional values might help inform people within highly popular Starbucks locations to be more conscious about their drink selections."
   },
   {
-    "objectID": "dataviz/candy/candy.html",
-    "href": "dataviz/candy/candy.html",
-    "title": "Halloween Candy Power",
+    "objectID": "ds-projects/mh-substance-use/index.html",
+    "href": "ds-projects/mh-substance-use/index.html",
+    "title": "How Substance Use and Demographics Connect To Mental Health",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+    "text": "Our research topic centers on the relationship between substance use disorders, mental health problems, and demographics within the US. More specifically, our group aims to explore whether there is a particular type of substance misuse that bears a higher correlation with a specific diagnosis of mental illness, and whether there are any trends or patterns within certain demographics or regions of those with substance use disorders\nCollab Project with Kaylee Do (Macalester ’22)"
   },
   {
-    "objectID": "dataviz/candy/candy.html#data-context",
-    "href": "dataviz/candy/candy.html#data-context",
-    "title": "Halloween Candy Power",
+    "objectID": "ds-projects/college-earnings/index.html",
+    "href": "ds-projects/college-earnings/index.html",
+    "title": "Regression Analysis of College Earnings and Expenses",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
-  },
-  {
-    "objectID": "dataviz/candy/candy.html#research-question",
-    "href": "dataviz/candy/candy.html#research-question",
-    "title": "Halloween Candy Power",
-    "section": "Research Question",
-    "text": "Research Question\nHow does win percentage differ across different sugar levels in candies and differ between chocolate and non-chocolatey ones?"
-  },
-  {
-    "objectID": "dataviz/candy/candy.html#data-transformation",
-    "href": "dataviz/candy/candy.html#data-transformation",
-    "title": "Halloween Candy Power",
-    "section": "Data Transformation",
-    "text": "Data Transformation\n\n\nCode\ncandy_transformed &lt;- candy %&gt;%\n  mutate(sugar_cat = cut(sugarpercent, breaks = c(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = c(\"0-10%\", \"11-20%\", \"21-30%\", \"31-40%\", \"41-50%\", \"51-60%\", \"61-70%\", \"71-80%\", \"81-90%\", \"91-100%\"))) %&gt;%\n  mutate(type = ifelse(chocolate == 1, \"Chocolate Candy\", \"Non-Chocolate Candy\")) %&gt;%\n  group_by(sugar_cat, type) \n\n# dumbbell plot data\ndumbbell_data &lt;- candy_transformed %&gt;%\n  summarize(avg_win = mean(winpercent)) %&gt;%\n  pivot_wider(names_from = type, values_from = avg_win) %&gt;%\n  mutate(diff = round(`Chocolate Candy` - `Non-Chocolate Candy`, 2)) %&gt;%\n  pivot_longer(cols = c(`Chocolate Candy`, `Non-Chocolate Candy`), \n               names_to = \"type\", values_to = \"avg_win\") \n\nchoco &lt;- dumbbell_data %&gt;%\n  filter(type == \"Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\nother &lt;- dumbbell_data %&gt;%\n  filter(type == \"Non-Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\ndiff &lt;- dumbbell_data %&gt;% \n  filter(type == \"Non-Chocolate Candy\") %&gt;% \n  mutate(x_pos = avg_win + (diff/2)) \n\n# bar graph data\ncol_graph_data &lt;- candy_transformed %&gt;%\n  summarize(count = n())"
-  },
-  {
-    "objectID": "dataviz/candy/candy.html#data-visualization",
-    "href": "dataviz/candy/candy.html#data-visualization",
-    "title": "Halloween Candy Power",
-    "section": "Data Visualization",
-    "text": "Data Visualization\n\n\nCode\np1 &lt;- ggplot(dumbbell_data) +\n  geom_segment(data = other, aes(x = avg_win, y = sugar_cat,\n              xend = choco$avg_win, yend = choco$sugar_cat), \n              color = \"#aeb6bf\",\n              size = 5.5,\n              alpha = .5) +\n  geom_point(aes(x = avg_win, y = sugar_cat, color = type), size = 5, show.legend = TRUE) +\n  geom_vline(xintercept = other$mean, linetype = \"dashed\", size = .5, alpha = .8, color = \"#6DB025\")+\n  geom_vline(xintercept = choco$mean, color = \"#59260b\", linetype = \"dashed\",  size = .5, alpha = .8) +\n  scale_color_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  geom_text(data = diff,\n             aes(label = paste(\"D: \",abs(diff)), x = x_pos, y = sugar_cat), \n             color = \"#4a4e4d\",\n             size = 2.5) + \n  labs(x = \"Average Win Percentage\", y = \"Sugar Percentage in Candies\") +\n  geom_text(data = other, aes(x = other$mean - 1.5, y = \"91-100%\"), label = \"MEAN\", angle = 90, size = 2.5, color = \"#6DB025\", vjust = 1)+\n  theme_classic() +\n  theme(legend.title = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.text.y = element_text(size = 8), \n        axis.title = element_text(size = 10))\n\np2 &lt;- ggplot(col_graph_data) +\n  geom_col(aes(x = count, y = sugar_cat, fill = type), width = 0.5) +\n  scale_fill_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  scale_x_continuous(limits = c(0, 12), breaks = c(0,2,4,6,8,10,12)) +\n  labs(x = \"Number of Candies\") +\n  theme_classic() +\n  theme(legend.position = \"none\", axis.title.y = element_blank(), axis.text.y = element_blank(),\n        axis.line.y = element_blank(), axis.ticks.y = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.title = element_text(size = 10))\n\n\nmain_plot &lt;- ggarrange(p1, p2, ncol = 2, widths = c(2.2, 0.75), align = \"h\",common.legend = TRUE)\n\nannotate_figure(\n      annotate_figure(main_plot, top = text_grob(\"The number of candies per sugar level are provided to compare the denominator of average win.\", size = 8, face = \"italic\")),\n      top = text_grob(\"Average Win Percentage per Sugar Level and Chocolate-ness in Halloween Candies\", \n              size = 12, face = \"bold\"))"
-  },
-  {
-    "objectID": "dataviz/candy/candy.html#discussion",
-    "href": "dataviz/candy/candy.html#discussion",
-    "title": "Halloween Candy Power",
-    "section": "Discussion",
-    "text": "Discussion\nA lot of people like candies due to their sweetness, and chocolate candy is a staple on Halloween, so I thought it would be interesting to examine these factors in relation to win percentage. My initial hypothesis was that sweetness level is positively correlated to winning percentage, and chocolate candies would have a higher winning percentage compared to non-chocolate candies.\nTo verify this hypothesis, I created a dumbbell plot in R to visualize the different winning percentages, on average, between chocolate and non-chocolate candies, across different sugar levels. I put the sugar categories on the y-axis and the average win percentage on the x-axis, a trade-off due to information density reason since while we perceive length differences along the y-axis as more important than horizontal position (Munzner, 118), the x-axis is capable of displaying more information across multiple categories. Meanwhile, chocolate and non-chocolate candies are represented by different colors: brown for chocolate (for obvious reasons), and green for non-chocolate ones because I need a color in good contrast with the shade of brown I select to make the comparison stand out.\n\nI prefer the dumbbell plot to its alternative, a clustered bar chart in this case because since there are 10 sweetness categories, a clustered bar chart would make the chart look crowded and thus harder to interpret. Adding the actual differences in winning percentage between chocolate and non-chocolate candies (annotated as “D: …” text in the graph) in a dumbbell chart also looks cleaner compared to a bar chart. In addition, two color-coded, dashed, vertical lines representing the mean winning percentage of each candy type are added to the graph to help the audience compare the winning percentage of the candy type in each sweetness category with its mean percentage. More importantly, the distance between the 2 mean lines helps us quantify the difference in average winning percentage between chocolate and non-chocolate candies and partially answers our research question: yes, chocolate candies do have a higher average winning percentage than non-chocolate ones.\nI also include a subplot, a stacked bar chart that displays the number of candies per sweetness category to the right of the main plot. Since people tend to read from left to right in the US, the subplot is deliberately placed on the right side and is designed to have a smaller size to draw focus to the main plot. The subplot is also color-coded to differentiate between the number of candies for chocolate and non-chocolate types. The purpose of this subplot, as explained in the subtitle, is to facilitate understanding of the denominators that are used to calculate the average winning percentage. While we do see that chocolate candies tend to have higher winning percentages across sugar levels, since the main plot only displays the average percentage, it leads to the question that the winning percentage of non-chocolate candies might be made lower since it is divided by a larger number of candies or due to the effect of some outliers, etc. As a result, the subplot offers us more insight into the scale with which the average win is calculated to foster transparency. A weakness of the graph, however, is that it did not give the audience information on whether there are any outliers in winning percentages that might skew the average winning results. I also chose the stacked bar chart format so the audience can also see the total number of candies per sugar category: it can be seen that each sugar level has a relatively similar number of candies, so the comparison across sugar levels is more reliable.\nI transformed the sugar percent variable from quantitative to a new categorical variable that represents sugar level (10 – 20%, etc.). While it is possible to gauge the correlation between win percentage and sugar percentage with a quantitative sugar percent variable, I decided to turn it to categorical because (1) most people do not distinguish between 42% and 50% sugar percentage so it’s reasonable to group them into the same category (2) it is easier to get the exact difference in winning percentage across sugar categories between chocolate and non-chocolate candies, as opposed to across sugar percentages (since in this case it only makes sense to subtract the winning percentage between 2 candies with the exact same sugar percentage, which is rare). We can see from the graph that sugar level does not seem to have a significant correlation with winning percentage, however, which goes against our initial hypothesis."
-  },
-  {
-    "objectID": "dataviz/candy/candy.html#bibliography",
-    "href": "dataviz/candy/candy.html#bibliography",
-    "title": "Halloween Candy Power",
-    "section": "Bibliography",
-    "text": "Bibliography\nMunzner, T. (2014). “Visualization Analysis and Design”. A K Peters Visualization Series, CRC Press, 2014. https://www.cs.ubc.ca/~tmm/vadbook/"
-  },
-  {
-    "objectID": "dataviz/taylor/taylor.html",
-    "href": "dataviz/taylor/taylor.html",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
-  },
-  {
-    "objectID": "dataviz/taylor/taylor.html#data-context",
-    "href": "dataviz/taylor/taylor.html#data-context",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
-    "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
-  },
-  {
-    "objectID": "dataviz/taylor/taylor.html#research-question",
-    "href": "dataviz/taylor/taylor.html#research-question",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
-    "section": "Research Question",
-    "text": "Research Question\nWhat are the differences in audio features across Taylor Swift’s Grammy-winning albums?"
-  },
-  {
-    "objectID": "dataviz/taylor/taylor.html#data-transformation",
-    "href": "dataviz/taylor/taylor.html#data-transformation",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
-    "section": "Data Transformation",
-    "text": "Data Transformation\n\n\nCode\ngrammy_songs &lt;- taylor_all_songs %&gt;%\n  filter(album_name %in% c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\")) %&gt;%\n  mutate(album_name = fct_relevel(album_name, c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\"))) %&gt;%\n  drop_na(danceability) %&gt;%\n  group_by(album_name) %&gt;%\n  summarize(Danceability = mean(danceability), \n            Energy = mean(energy), \n            Speechiness = mean(speechiness), \n            Acousticness = mean(acousticness), \n            Valence = mean(valence),\n            Liveness = mean(liveness))"
-  },
-  {
-    "objectID": "dataviz/taylor/taylor.html#data-visualization",
-    "href": "dataviz/taylor/taylor.html#data-visualization",
-    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
-    "section": "Data Visualization",
-    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nggradar(grammy_songs, values.radar = c(\"0\", \"0.4\", \"0.8\"),\n        grid.min = 0, grid.mid = 0.4, grid.max = 0.8, \n        font.radar = \"Inter\",\n        grid.label.size = 5, axis.label.size = 5, legend.text.size = 10,\n        group.line.width = 0.8, group.point.size = 0,\n        group.colours = c(\"#EFC180\", \"#18A5DC\", \"#A5C9A5\", \"#242E47\"), \n        background.circle.colour = \"white\",\n        gridline.mid.colour = \"darkgrey\",\n        legend.position = \"right\") + \n  labs(title = \"Spotify Audio Features of Taylor Swift's Grammy-Winning Albums\") +\n  theme(\n      plot.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      panel.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.key = element_rect(fill = NA, color = NA),\n      plot.title = element_text(family = \"lobstertwo\", size = 20, face = \"bold\", \n                                color = \"#2a475e\", hjust = 0.5)\n  )"
+    "text": "The prospect of receiving a high-income job after graduation is one of the most commonly cited reasons for college attendance. However, the financial return of colleges is dependent on a variety of factors, including both college-based factors such as their employability reputation to potential employers and individual-based factors like the majors students decide to pursue. Since colleges’ return on investment can have a cumulative impact on an individual’s lifetime financial prospects, I am inclined to examine the factors that could potentially influence the earnings that college graduates receive. These factors include instructional expenses, control type (public/private), degree offered, and average family income."
   },
   {
     "objectID": "dataviz/wastewater/wastewater.html",
@@ -242,7 +60,7 @@
     "href": "dataviz/wastewater/wastewater.html#data-visualization",
     "title": "Wastewater Treatment Plants",
     "section": "Data Visualization",
-    "text": "Data Visualization\n\n\nCode\nn1 &lt;- HydroWASTE_v10 %&gt;%\n  filter(CNTRY_ISO %in% \"USA\") %&gt;%\n  nrow()\n\nn2 &lt;- USA_wwtp %&gt;% \n  filter(threshold == \"lower\") %&gt;%\n  nrow()\n\nn2*100/n1\n\n\n[1] 2.955665\n\n\n\n\nCode\nshowtext_auto()\n\nusa &lt;- st_as_sf(maps::map(\"state\", fill=TRUE, plot = FALSE))\n\nggplot(usa) +\n  geom_sf(color = \"grey80\", fill = \"#2C3E4C\", size = 0.125) +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"within\"), aes(LON_OUT, LAT_OUT), alpha = 0.1, size = 0.08, color = \"#949398FF\") +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"lower\"), aes(LON_OUT, LAT_OUT, color = df_cut), alpha = 0.8, size = 1) +\n  guides(colour = guide_legend(override.aes = list(size = 6, alpha = 0.8))) +\n  labs(title = \"Wastewater Dilution Below Regulatory Threshold (&lt;10% Dilution) in the United States\", subtitle = \"2.9% (438 out of 14,819) of US Wastewater Treatment Plants have a Dilution Factor Lower than the Threshold for Environmental Concern\", color = str_wrap(\"Regulatory Threshold\", 8), caption = \"Data: Macedo et al, 2022 (Tidy Tuesday 2022, week 38) | Graphic Design Inspired by Github Account @NearAndDistant\") +\n  rcartocolor::scale_color_carto_d(palette = \"PinkYl\") + \n  coord_sf(lims_method = \"geometry_bbox\") +\n  theme_void() +\n  theme(legend.position   = \"right\",\n        text = element_text(color = \"white\", family = \"Inter\"),\n        legend.title      = element_text(face = \"bold\"),\n        plot.title        = element_text(color = \"white\", face = \"bold\", size = 15),\n        plot.caption      = element_text(hjust = 0), \n        panel.background  = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.background   = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.margin       = margin(20,20,20,20, unit = \"pt\"))"
+    "text": "Data Visualization\n\n\nCode\nn1 &lt;- HydroWASTE_v10 %&gt;%\n  filter(CNTRY_ISO %in% \"USA\") %&gt;%\n  nrow()\n\nn2 &lt;- USA_wwtp %&gt;% \n  filter(threshold == \"lower\") %&gt;%\n  nrow()\n\nn2*100/n1\n\n\n[1] 2.955665\n\n\n\n\nCode\nshowtext_auto()\n\nusa &lt;- st_as_sf(maps::map(\"state\", fill=TRUE, plot = FALSE))\n\nggplot(usa) +\n  geom_sf(color = \"grey80\", fill = \"#2C3E4C\", size = 0.125) +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"within\"), aes(LON_OUT, LAT_OUT), alpha = 0.1, size = 0.08, color = \"#949398FF\") +\n  geom_point(data = USA_wwtp %&gt;% filter(threshold == \"lower\"), aes(LON_OUT, LAT_OUT, color = df_cut), alpha = 0.8, size = 1) +\n  guides(colour = guide_legend(override.aes = list(size = 6, alpha = 0.8))) +\n  labs(title = \"Wastewater Dilution Below Regulatory Threshold (&lt;10% Dilution) in the United States\", subtitle = \"2.9% (438 out of 14,819) of US Wastewater Treatment Plants have a Dilution Factor Lower than the Threshold for Environmental Concern\", color = str_wrap(\"Regulatory Threshold\", 8), caption = \"Data: Macedo et al, 2022 (Tidy Tuesday 2022, week 38) | Graphic Design Inspired by Github Account @NearAndDistant\") +\n  rcartocolor::scale_color_carto_d(palette = \"PinkYl\") + \n  coord_sf(lims_method = \"geometry_bbox\") +\n  theme_void() +\n  theme(legend.position   = \"right\",\n        text = element_text(color = \"white\", family = \"Inter\"),\n        legend.title      = element_text(face = \"bold\"),\n        plot.title        = element_text(color = \"white\", face = \"bold\", size = 15),\n        plot.caption      = element_text(hjust = 0), \n        panel.background  = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.background   = element_rect(fill = \"#21242b\", color = \"#21242b\"),\n        plot.margin       = margin(20,20,20,20, unit = \"pt\"))\n\n\n\n\n\n\n\n\n\nSouth Central region (especially around Northwest Texas region) and California have a higher concentration of wastewater treatment plants with a dilution factor below regulatory threshold."
   },
   {
     "objectID": "dataviz/wastewater/wastewater.html#credit",
@@ -252,24 +70,234 @@
     "text": "Credit\nThe visualization uses the template from Github user @NearAndDistant at this link"
   },
   {
-    "objectID": "ds-projects/college-earnings/index.html",
-    "href": "ds-projects/college-earnings/index.html",
-    "title": "Regression Analysis of College Earnings and Expenses",
+    "objectID": "dataviz/taylor/taylor.html",
+    "href": "dataviz/taylor/taylor.html",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "The prospect of receiving a high-income job after graduation is one of the most commonly cited reasons for college attendance. However, the financial return of colleges is dependent on a variety of factors, including both college-based factors such as their employability reputation to potential employers and individual-based factors like the majors students decide to pursue. Since colleges’ return on investment can have a cumulative impact on an individual’s lifetime financial prospects, I am inclined to examine the factors that could potentially influence the earnings that college graduates receive. These factors include instructional expenses, control type (public/private), degree offered, and average family income."
+    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
-    "objectID": "ds-projects/mh-substance-use/index.html",
-    "href": "ds-projects/mh-substance-use/index.html",
-    "title": "How Substance Use and Demographics Relate To Mental Health",
+    "objectID": "dataviz/taylor/taylor.html#data-context",
+    "href": "dataviz/taylor/taylor.html#data-context",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "Our research topic centers on the relationship between substance use disorders, mental health problems, and demographics within the US. More specifically, our group aims to explore whether there is a particular type of substance misuse that bears a higher correlation with a specific diagnosis of mental illness, and whether there are any trends or patterns within certain demographics or regions of those with substance use disorders"
+    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
-    "objectID": "ds-projects/tableau-starbucks/index.html",
-    "href": "ds-projects/tableau-starbucks/index.html",
-    "title": "Starbucks’ Tableau Dashboard",
+    "objectID": "dataviz/taylor/taylor.html#research-question",
+    "href": "dataviz/taylor/taylor.html#research-question",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "section": "Research Question",
+    "text": "Research Question\nWhat are the differences in audio features across Taylor Swift’s Grammy-winning albums?"
+  },
+  {
+    "objectID": "dataviz/taylor/taylor.html#data-transformation",
+    "href": "dataviz/taylor/taylor.html#data-transformation",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ngrammy_songs &lt;- taylor_all_songs %&gt;%\n  filter(album_name %in% c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\")) %&gt;%\n  mutate(album_name = fct_relevel(album_name, c(\"Fearless\", \"1989\", \"folklore\", \"Midnights\"))) %&gt;%\n  drop_na(danceability) %&gt;%\n  group_by(album_name) %&gt;%\n  summarize(Danceability = mean(danceability), \n            Energy = mean(energy), \n            Speechiness = mean(speechiness), \n            Acousticness = mean(acousticness), \n            Instrumentalness = mean(instrumentalness),\n            Valence = mean(valence))"
+  },
+  {
+    "objectID": "dataviz/taylor/taylor.html#data-visualization",
+    "href": "dataviz/taylor/taylor.html#data-visualization",
+    "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nggradar(grammy_songs, values.radar = c(\"0\", \"0.4\", \"0.8\"),\n        grid.min = 0, grid.mid = 0.4, grid.max = 0.8, \n        font.radar = \"Inter\",\n        grid.label.size = 4, axis.label.size = 4, legend.text.size = 8,\n        group.line.width = 0.8, group.point.size = 0,\n        group.colours = c(\"#EFC180\", \"#18A5DC\", \"#A5C9A5\", \"#242E47\"), \n        background.circle.colour = \"white\",\n        gridline.mid.colour = \"darkgrey\",\n        legend.position = \"right\") + \n  labs(title = \"Spotify Audio Features of Taylor Swift's Grammy-Winning Albums\") +\n  theme(\n      plot.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      panel.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.background = element_rect(fill = \"#ffe9ec\", color = \"#ffe9ec\"),\n      legend.key = element_rect(fill = NA, color = NA),\n      plot.title = element_text(family = \"lobstertwo\", size = 20, face = \"bold\", \n                                color = \"#2a475e\", hjust = 0.5)\n  )\n\n\n\n\n\n\n\n\n\nThe most variations between the albums lie in their energy level and acousticness, with “1989” having the highest average energy score and “folklore” ranking the highest in acousticness. All 4 albums have relatively high average danceability (&gt; 0.5) while scoring low in instrumentalness and speechiness."
+  },
+  {
+    "objectID": "dataviz/coffee/coffee.html",
+    "href": "dataviz/coffee/coffee.html",
+    "title": "Coffee Spending & Preferences",
     "section": "",
-    "text": "Starbucks is the largest coffee chain in the United States regarding physical units, with over 15,000 stores in the U.S. in 2022. Despite this immense popularity, many Starbucks drinks are unhealthy for our heart. Combined with the fact that heart disease is the leading cause of death in the U.S., investigating Starbucks’ popularity and nutritional values might help inform people within highly popular Starbucks locations to be more conscious about their drink selections."
+    "text": "The dataset and its information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
+  },
+  {
+    "objectID": "dataviz/coffee/coffee.html#data-context",
+    "href": "dataviz/coffee/coffee.html#data-context",
+    "title": "Coffee Spending & Preferences",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
+  },
+  {
+    "objectID": "dataviz/coffee/coffee.html#research-question",
+    "href": "dataviz/coffee/coffee.html#research-question",
+    "title": "Coffee Spending & Preferences",
+    "section": "Research Question",
+    "text": "Research Question\nWhat is the connection between monthly spending in coffee and coffee preferences among the survey respondents?"
+  },
+  {
+    "objectID": "dataviz/coffee/coffee.html#data-transformation",
+    "href": "dataviz/coffee/coffee.html#data-transformation",
+    "title": "Coffee Spending & Preferences",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ndf &lt;- coffee_survey %&gt;%\n  select(style, roast_level, total_spend) %&gt;%\n  filter(roast_level %in% c(\"Light\", \"Medium\", \"Dark\")) %&gt;%\n  filter(!is.na(style) & !is.na(total_spend)) %&gt;%\n  mutate(spending = ifelse(total_spend %in% c(\"$60-$80\", \"$80-$100\", \"&gt;$100\"), \"&gt;$60\", total_spend)) %&gt;%\n  mutate(spending = fct_relevel(spending, c(\"&lt;$20\", \"$20-$40\",\"$40-$60\", \"&gt;$60\"))) %&gt;%\n  mutate(roast_level = fct_relevel(roast_level, c(\"Light\", \"Medium\", \"Dark\"))) %&gt;%\n  group_by(spending, roast_level, style) %&gt;%\n  mutate(count = n())"
+  },
+  {
+    "objectID": "cs.html",
+    "href": "cs.html",
+    "title": "Computer Science Projects",
+    "section": "",
+    "text": "Class projects for Macalester’s Object-Oriented Programming and Abstraction and Core Concepts of Computer Science\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPianOvice\n\n\n\n\n\n\nJava\n\n\n\nAn interactive piano interface for melody composition and harmonization \n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nDinosaur Game\n\n\n\n\n\n\nPython\n\n\nPygame\n\n\n\nDinosaur Game (Google Chrome’s web browser) \n\n\n\n\n\nMay 12, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cs-projects/dino/index.html",
+    "href": "cs-projects/dino/index.html",
+    "title": "Dinosaur Game",
+    "section": "",
+    "text": "This project simulates the Dinosaur Game (also known as Chrome Dino) built into the Google Chrome web browser using Pygame. The game was originally created by the Chrome UX team in 2014. Player needs to guide a Tyrannosaurus rex across a moving landscape, avoiding as many obstacles as possible to achieve a high score.\nCollab project with Trung Dam (Macalester ’25)"
+  },
+  {
+    "objectID": "cs-projects/pianovice/index.html",
+    "href": "cs-projects/pianovice/index.html",
+    "title": "PianOvice",
+    "section": "",
+    "text": "The project features an interactive piano interface that allows users to compose three separate melodies that can be played simultaneously. Our code requires users to install Java 17 in order to use kilt-graphics, a graphic library developed by the Mathematics, Statistics, and Computer Science (MSCS) department in Macalester College.\nCollab project with Kien Nguyen (Macalester ’25)"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html",
+    "href": "dataviz/candy/candy.html",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-context",
+    "href": "dataviz/candy/candy.html#data-context",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#research-question",
+    "href": "dataviz/candy/candy.html#research-question",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "Research Question",
+    "text": "Research Question\nHow does win percentage differ across different sugar levels in candies and differ between chocolate and non-chocolatey ones?"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-transformation",
+    "href": "dataviz/candy/candy.html#data-transformation",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ncandy_transformed &lt;- candy %&gt;%\n  mutate(sugar_cat = cut(sugarpercent, breaks = c(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = c(\"0-10%\", \"11-20%\", \"21-30%\", \"31-40%\", \"41-50%\", \"51-60%\", \"61-70%\", \"71-80%\", \"81-90%\", \"91-100%\"))) %&gt;%\n  mutate(type = ifelse(chocolate == 1, \"Chocolate Candy\", \"Non-Chocolate Candy\")) %&gt;%\n  group_by(sugar_cat, type) \n\n# dumbbell plot data\ndumbbell_data &lt;- candy_transformed %&gt;%\n  summarize(avg_win = mean(winpercent)) %&gt;%\n  pivot_wider(names_from = type, values_from = avg_win) %&gt;%\n  mutate(diff = round(`Chocolate Candy` - `Non-Chocolate Candy`, 2)) %&gt;%\n  pivot_longer(cols = c(`Chocolate Candy`, `Non-Chocolate Candy`), \n               names_to = \"type\", values_to = \"avg_win\") \n\nchoco &lt;- dumbbell_data %&gt;%\n  filter(type == \"Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\nother &lt;- dumbbell_data %&gt;%\n  filter(type == \"Non-Chocolate Candy\") %&gt;%\n  group_by(type) %&gt;%\n  mutate(mean = mean(avg_win))\n\ndiff &lt;- dumbbell_data %&gt;% \n  filter(type == \"Non-Chocolate Candy\") %&gt;% \n  mutate(x_pos = avg_win + (diff/2)) \n\n# bar graph data\ncol_graph_data &lt;- candy_transformed %&gt;%\n  summarize(count = n())"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#data-visualization",
+    "href": "dataviz/candy/candy.html#data-visualization",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\n\nCode\np1 &lt;- ggplot(dumbbell_data) +\n  geom_segment(data = other, aes(x = avg_win, y = sugar_cat,\n              xend = choco$avg_win, yend = choco$sugar_cat), \n              color = \"#aeb6bf\",\n              size = 5.5,\n              alpha = .5) +\n  geom_point(aes(x = avg_win, y = sugar_cat, color = type), size = 5, show.legend = TRUE) +\n  geom_vline(xintercept = other$mean, linetype = \"dashed\", size = .5, alpha = .8, color = \"#6DB025\")+\n  geom_vline(xintercept = choco$mean, color = \"#59260b\", linetype = \"dashed\",  size = .5, alpha = .8) +\n  scale_color_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  geom_text(data = diff,\n             aes(label = paste(\"D: \",abs(diff)), x = x_pos, y = sugar_cat), \n             color = \"#4a4e4d\",\n             size = 2.5) + \n  labs(x = \"Average Win Percentage\", y = \"Sugar Percentage in Candies\") +\n  geom_text(data = other, aes(x = other$mean - 1.5, y = \"91-100%\"), label = \"MEAN\", angle = 90, size = 2.5, color = \"#6DB025\", vjust = 1)+\n  theme_classic() +\n  theme(legend.title = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.text.y = element_text(size = 8), \n        axis.title = element_text(size = 10))\n\np2 &lt;- ggplot(col_graph_data) +\n  geom_col(aes(x = count, y = sugar_cat, fill = type), width = 0.5) +\n  scale_fill_manual(values=c(\"#59260b\", \"#6DB025\")) +\n  scale_x_continuous(limits = c(0, 12), breaks = c(0,2,4,6,8,10,12)) +\n  labs(x = \"Number of Candies\") +\n  theme_classic() +\n  theme(legend.position = \"none\", axis.title.y = element_blank(), axis.text.y = element_blank(),\n        axis.line.y = element_blank(), axis.ticks.y = element_blank(), \n        panel.background = element_rect(fill = \"#f5f5f4\"),\n        axis.text.x = element_text(size = 8),\n        axis.title = element_text(size = 10))\n\n\nmain_plot &lt;- ggarrange(p1, p2, ncol = 2, widths = c(2.2, 0.75), align = \"h\",common.legend = TRUE)\n\nannotate_figure(\n      annotate_figure(main_plot, top = text_grob(\"The number of candies per sugar level are provided to compare the denominator of average win.\", size = 8, face = \"italic\")),\n      top = text_grob(\"Average Win Percentage per Sugar Level and Chocolate-ness in Halloween Candies\", \n              size = 12, face = \"bold\"))"
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#discussion",
+    "href": "dataviz/candy/candy.html#discussion",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "Discussion",
+    "text": "Discussion\nA lot of people like candies due to their sweetness, and chocolate candy is a staple on Halloween, so I thought it would be interesting to examine these factors in relation to win percentage. My initial hypothesis was that sweetness level is positively correlated to winning percentage, and chocolate candies would have a higher winning percentage compared to non-chocolate candies.\nTo verify this hypothesis, I created a dumbbell plot in R to visualize the different winning percentages, on average, between chocolate and non-chocolate candies, across different sugar levels. I put the sugar categories on the y-axis and the average win percentage on the x-axis, a trade-off due to information density reason since while we perceive length differences along the y-axis as more important than horizontal position (Munzner, 118), the x-axis is capable of displaying more information across multiple categories. Meanwhile, chocolate and non-chocolate candies are represented by different colors: brown for chocolate (for obvious reasons), and green for non-chocolate ones because I need a color in good contrast with the shade of brown I select to make the comparison stand out.\n\nI prefer the dumbbell plot to its alternative, a clustered bar chart in this case because since there are 10 sweetness categories, a clustered bar chart would make the chart look crowded and thus harder to interpret. Adding the actual differences in winning percentage between chocolate and non-chocolate candies (annotated as “D: …” text in the graph) in a dumbbell chart also looks cleaner compared to a bar chart. In addition, two color-coded, dashed, vertical lines representing the mean winning percentage of each candy type are added to the graph to help the audience compare the winning percentage of the candy type in each sweetness category with its mean percentage. More importantly, the distance between the 2 mean lines helps us quantify the difference in average winning percentage between chocolate and non-chocolate candies and partially answers our research question: yes, chocolate candies do have a higher average winning percentage than non-chocolate ones.\nI also include a subplot, a stacked bar chart that displays the number of candies per sweetness category to the right of the main plot. Since people tend to read from left to right in the US, the subplot is deliberately placed on the right side and is designed to have a smaller size to draw focus to the main plot. The subplot is also color-coded to differentiate between the number of candies for chocolate and non-chocolate types. The purpose of this subplot, as explained in the subtitle, is to facilitate understanding of the denominators that are used to calculate the average winning percentage. While we do see that chocolate candies tend to have higher winning percentages across sugar levels, since the main plot only displays the average percentage, it leads to the question that the winning percentage of non-chocolate candies might be made lower since it is divided by a larger number of candies or due to the effect of some outliers, etc. As a result, the subplot offers us more insight into the scale with which the average win is calculated to foster transparency. A weakness of the graph, however, is that it did not give the audience information on whether there are any outliers in winning percentages that might skew the average winning results. I also chose the stacked bar chart format so the audience can also see the total number of candies per sugar category: it can be seen that each sugar level has a relatively similar number of candies, so the comparison across sugar levels is more reliable.\nI transformed the sugar percent variable from quantitative to a new categorical variable that represents sugar level (10 – 20%, etc.). While it is possible to gauge the correlation between win percentage and sugar percentage with a quantitative sugar percent variable, I decided to turn it to categorical because (1) most people do not distinguish between 42% and 50% sugar percentage so it’s reasonable to group them into the same category (2) it is easier to get the exact difference in winning percentage across sugar categories between chocolate and non-chocolate candies, as opposed to across sugar percentages (since in this case it only makes sense to subtract the winning percentage between 2 candies with the exact same sugar percentage, which is rare). We can see from the graph that sugar level does not seem to have a significant correlation with winning percentage, however, which goes against our initial hypothesis."
+  },
+  {
+    "objectID": "dataviz/candy/candy.html#bibliography",
+    "href": "dataviz/candy/candy.html#bibliography",
+    "title": "Halloween Candies’ Win Percentage",
+    "section": "Bibliography",
+    "text": "Bibliography\nMunzner, T. (2014). “Visualization Analysis and Design”. A K Peters Visualization Series, CRC Press, 2014. https://www.cs.ubc.ca/~tmm/vadbook/"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html",
+    "href": "dataviz/museum/museum.html",
+    "title": "UK Museums",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-context",
+    "href": "dataviz/museum/museum.html#data-context",
+    "title": "UK Museums",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#research-question",
+    "href": "dataviz/museum/museum.html#research-question",
+    "title": "UK Museums",
+    "section": "Research Question",
+    "text": "Research Question\nComparing Area Deprivation Indexes Between Large-Sized and Small-to-Medium-Sized Operating Museums in London"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-transformation",
+    "href": "dataviz/museum/museum.html#data-transformation",
+    "title": "UK Museums",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\n\nCode\ndata &lt;- museums %&gt;%\n  filter(Size != \"unknown\") %&gt;%\n  filter(Year_closed == \"9999:9999\") %&gt;% # select museums that are still open\n  filter(str_detect(Admin_area, \"London\")) %&gt;%\n  mutate(size_cat = case_when(Size %in% c(\"huge\", \"large\") ~ \"Large\",\n                              Size %in% c(\"medium\", \"small\") ~ \"Small/Medium\")) %&gt;%\n  select(Accreditation, size_cat, Size, starts_with(\"Area_Deprivation_index\")) %&gt;%\n  rename_with(~ sub(\"Area_Deprivation_index_\", \"\", .x), starts_with(\"Area_Deprivation_index_\")) \n \n\ndata &lt;- na.omit(data)"
+  },
+  {
+    "objectID": "dataviz/museum/museum.html#data-visualization",
+    "href": "dataviz/museum/museum.html#data-visualization",
+    "title": "UK Museums",
+    "section": "Data Visualization",
+    "text": "Data Visualization\nSince there are multiple area deprivation indexes, I decided to create a correlation matrix for the Area Deprivation Indexes in our data to see if there is any highly correlated feature that can be removed.\n\n\nCode\ncorrplot(cor(data[5:11]), method = 'color', order = 'FPC', type = \"lower\", diag = FALSE, col = COL1('Purples'), addCoef.col = 'white', title = \"Correlation Matrix of Area Deprivation Indexes\", mar=c(0,0,1,0), tl.col=\"black\")\n\n\n\n\n\n\n\n\n\nAs seen in the plot, the health, income, and employment indexes are highly correlated. Since income is the first variable in the first principal component (FPC), I keep it in the dataset while removing the other two variables for my parallel plot.\n\n\nCode\nshowtext_auto()\n\ndata %&gt;%\n  select(-c(health, employment)) %&gt;%\n  ggparcoord(\n    columns = 5:9, groupColumn = 2, scale = \"globalminmax\",\n    showPoints = FALSE, \n    title = \"Parallel Plot for London's Operating Museums Deprivation Indexes\",\n    alphaLines = 0.7\n    ) + \n  scale_y_continuous(breaks = c(0, 2, 4, 6, 8, 10)) +\n  scale_color_manual(values = c(\"darkred\", \"lightgray\")) +\n  labs(subtitle = \"Index ranges from 1 (most deprived) to 10 (least deprived)\",\n       color = \"Museum Size\") +\n  theme_ipsum()+\n  theme(plot.title = element_text(size=15), \n        text = element_text(family = \"Inter\"))\n\n\n\n\n\n\n\n\n\nOperating, larger-sized museums in London are more likely to locate in areas with lower housing availability and relatively high education access."
+  },
+  {
+    "objectID": "dataviz/valentine/valentine.html",
+    "href": "dataviz/valentine/valentine.html",
+    "title": "Valentine’s Spending By Year",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
+  },
+  {
+    "objectID": "dataviz/valentine/valentine.html#data-context",
+    "href": "dataviz/valentine/valentine.html#data-context",
+    "title": "Valentine’s Spending By Year",
+    "section": "",
+    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
+  },
+  {
+    "objectID": "dataviz/valentine/valentine.html#research-question",
+    "href": "dataviz/valentine/valentine.html#research-question",
+    "title": "Valentine’s Spending By Year",
+    "section": "Research Question",
+    "text": "Research Question\nHow do Valentine Day’s consumer spending change across the years?"
+  },
+  {
+    "objectID": "dataviz/valentine/valentine.html#data-transformation",
+    "href": "dataviz/valentine/valentine.html#data-transformation",
+    "title": "Valentine’s Spending By Year",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\ngifts_year_long &lt;- historical_spending %&gt;%\n  select(-c(PercentCelebrating, PerPerson)) %&gt;%\n  pivot_longer(cols = !Year, names_to = \"gift_type\", values_to = \"avg_amt\")"
+  },
+  {
+    "objectID": "dataviz/valentine/valentine.html#data-visualization",
+    "href": "dataviz/valentine/valentine.html#data-visualization",
+    "title": "Valentine’s Spending By Year",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\n\nCode\nshowtext_auto()\n\nannot &lt;- function(x_pos, y_pos, label_string) {\n  annotate(\"text\", x = x_pos, y = y_pos,\n           label = label_string, \n           hjust = 0.5, vjust = -1,\n           size = 3, lineheight = .8,\n           fontface = \"bold\") \n}\n\nstyle = element_rect(fill = \"#fff2f2\", color = \"#fff2f2\")\n\nggplot(gifts_year_long, aes(x = Year, y = avg_amt)) +\n  geom_area(colour = NA, aes(fill = gift_type)) +\n  scale_x_continuous(breaks = c(2010,2012,2014,2016,2018,2020,2022), limits = c(2010,2022)) +\n  labs(title = \"It's Valentine: Average Spending Per Person and Gift Type\", subtitle = \"From 2010 to 2022\", y = \"Average Spending Amount\", fill = \"Gift Type\") + \n  scale_fill_manual(values = generate_palette(\"#f686bd\", \n                             modification = \"go_both_ways\", \n                             n_colours = 7)) +\n  #segment\n  geom_segment(aes(x = 2010, y = 0, xend = 2010, yend = 103)) +\n      geom_point(aes(x = 2010, y = 103.00)) +\n      annot(2010, 103.00, \"$103.00\") +\n  geom_segment(aes(x = 2012, y = 0, xend = 2012, yend = 126.03)) +\n      geom_point(aes(x = 2012, y = 126.03)) +\n      annot(2012, 126.03, \"$126.03 \\n per person avg. spend\") +\n  geom_segment(aes(x = 2014, y = 0, xend = 2014, yend = 133.91)) +\n      geom_point(aes(x = 2014, y = 133.91)) +\n      annot(2014, 133.91, \"$133.91\") +\n  geom_segment(aes(x = 2016, y = 0, xend = 2016, yend = 146.84)) +\n      geom_point(aes(x = 2016, y = 146.84)) +\n      annot(2016, 146.84, \"$146.84\") +\n  geom_segment(aes(x = 2018, y = 0, xend = 2018, yend = 143.56)) +\n      geom_point(aes(x = 2018, y = 143.56)) +\n      annot(2018, 143.56, \"$143.56\") +\n  geom_segment(aes(x = 2020, y = 0, xend = 2020, yend = 196.31)) +\n      geom_point(aes(x = 2020, y = 196.31)) +\n      annot(2020, 196.31, \"$196.31\") +\n  geom_segment(aes(x = 2022, y = 0, xend = 2022, yend = 175.41)) +\n      geom_point(aes(x = 2022, y = 175.41)) +\n      annot(2022, 175.41, \"$175.41\") +\n  theme_classic() +\n  theme(plot.title = element_text(family = \"josefin\", size = 20, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.subtitle = element_text(family = \"josefin\", size = 15, face = \"bold\", \n                                color = \"#311a25\", hjust = 0.5),\n        plot.background = style, panel.background = style, legend.background = style)\n\n\n\n\n\n\n\n\n\nBetween 2010 to 2022, Per-person average spending on Valentine Day has been on the rise, peaking in 2020. Jewelry and night-out remains the two categories with highest spending, with jewelry spending in recent years increasing by a moderate amount compared to its 2010 number."
+  },
+  {
+    "objectID": "dataviz.html",
+    "href": "dataviz.html",
+    "title": "Data Visualizations",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCoffee Spending & Preferences\n\n\n\nR\n\n\n\nDo high coffee spenders have similar coffee preferences?\n\n\n\n\n\n\nJul 27, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nValentine’s Spending By Year\n\n\n\nR\n\n\n\nHow do Valentine Day’s consumer spending change over time?\n\n\n\n\n\n\nMar 7, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAudio Features in Taylor Swift’s Grammy-Winning Albums\n\n\n\nR\n\n\n\nTidyTuesday’s Taylor Swift Dataset (2023)\n\n\n\n\n\n\nFeb 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHalloween Candies’ Win Percentage\n\n\n\nR\n\n\n\nDo people prefer sweet chocolate candies?\n\n\n\n\n\n\nSep 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUK Museums\n\n\n\nR\n\n\n\nAre larger museums located in more developed neighborhoods?\n\n\n\n\n\n\nNov 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWastewater Treatment Plants\n\n\n\nR\n\n\n\nWhich U.S. wastewater treatment plants might pose an environmental concern?\n\n\n\n\n\n\nSep 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ds-projects/edtech/index.html",
+    "href": "ds-projects/edtech/index.html",
+    "title": "Building Edtech for Mental Wellbeing",
+    "section": "",
+    "text": "Throughout and in the aftermath of the COVID-19 pandemic, there has been a notable shift towards incorporating technology into education. While educational technology has increased accessibility and flexibility in uncertain times, there are potential consequences due to the inherent lack of social connection and physical activities in online learning. In this project, we aim to investigate this increasing prevalence of educational technology and their impact on the well-being of individuals within this evolving educational landscape.\nCollab project with Na Nguyen (Macalester ’25)"
+  },
+  {
+    "objectID": "ds-projects/ml-music/index.html",
+    "href": "ds-projects/ml-music/index.html",
+    "title": "Predicting Song Popularity through Audio Features",
+    "section": "",
+    "text": "What aspect do hit songs share? With the increasing globalization of the US music industry and the rise of experimental music, it becomes more challenging to determine what features distinguish hits from less popular songs. As music continues to play an integral role in our lives, whether for recreational purposes or as a mechanism for emotional outlets, it is crucial to understand the musical mechanisms that affect their popularity. By examining the factors that influence the success of a song over time, we can gain a deeper insight into music preferences and listeners’ behavior in the United States.\nTo explore the relationship between audio features and popularity, my supervised learning analysis examines the audio features that are the strongest predictors of Spotify Track Popularity by fitting a LASSO, GAM, and a random forest model. I also apply K-means Clustering to investigate if there exist any trends in the dataset across decades and audio features. These analyses allow me to gain a deeper insight into changing music preferences or composition trends in the US music industry over time."
+  },
+  {
+    "objectID": "ds.html",
+    "href": "ds.html",
+    "title": "Data Science Projects",
+    "section": "",
+    "text": "My data science projects apply machine learning algorithms, statistical models, and data visualizations to discover trends and tell a story across multiple domains of psychology, education, health, business, and arts. These projects demonstrate my growth as a Data Scientist through the knowledge I learn in college courses including Data Visualization, Intermediate Data Science, Statistical Machine Learning, and Statistical Modeling.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nStarbucks’ Tableau Dashboard\n\n\n\nTableau\n\n\n\nAdvanced Tableau: parameter actions, set actions, dynamic filtering\n\n\n\n\n\n\nDec 18, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding Edtech for Mental Wellbeing\n\n\n\nR\n\n\n\nDistribution analysis, segment analysis, R functions\n\n\n\n\n\n\nDec 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Song Popularity through Audio Features\n\n\n\nR\n\n\nMachine Learning\n\n\nCorrelation Analysis\n\n\n\nLASSO regression, Random Forest, GAM, K-Means, Cross-validation, Correlation Analysis\n\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Substance Use and Demographics Connect To Mental Health\n\n\n\nR\n\n\n\nDistribution analysis & correlation analysis\n\n\n\n\n\n\nDec 13, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRegression Analysis of College Earnings and Expenses\n\n\n\nR\n\n\nStatistical Modeling\n\n\nRegression Analysis\n\n\n\nLinear regression, logistic regression, residual analysis, hypothesis testing\n\n\n\n\n\n\nDec 15, 2021\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

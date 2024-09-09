@@ -1,13 +1,11 @@
 ---
 title: "Starbucks' Tableau Dashboard"
 description: |
-  Starbucks Popularity in the USA and Drinks' Nutrition Comparison for Cardiovascular Health
+  Advanced Tableau: parameter actions, set actions, dynamic filtering
 date: 12-18-2023
 image: thumbnail.png
 categories:
-  - Interactive Visualization
-  - Health
-  - Business
+  - Tableau
 about: 
   template: solana
   image: thumbnail.png

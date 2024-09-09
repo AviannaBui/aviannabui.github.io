@@ -1,0 +1,43 @@
+---
+title: "Hi, I'm Hien-Anh (Avianna)!"
+about:
+  id: introduction
+  template: broadside
+  image-width: 8em
+  image-shape: round
+  image: images/profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/avianna-bui/
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui
+---
+
+:::{#introduction}
+
+I'm an aspiring human-centered data scientist & business analyst with professional experience in aviation, healthcare, and HR analytics. Blending my educational psychology learning with my data science expertise, I foster data-driven decision-making and strategic growth by drawing on cognitive science and learning frameworks to deliver insightful data analysis and actionable insights. 
+
+### Professional Experiences
+
+**Endeavor Air**, subsidiary of Delta Air Lines | Operational Analytics Intern | 2024 - present
+
+**Macalester College** | Machine Learning & Data Science Teaching Assistant | 2022 - 2024
+
+**Panacea Healthcare Solutions** | Healthcare Data Intern | 2023
+
+### Education
+
+**Macalester College** | B.A. expected May 2025 | GPA: 4.0<br>
+*Data Science major, Psychology and Education minors*
+
+:::
+
+
+
+
+
+
+
+

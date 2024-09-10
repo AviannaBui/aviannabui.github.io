@@ -32,14 +32,14 @@
     "href": "dataviz/wastewater/wastewater.html",
     "title": "Wastewater Treatment Plants",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
+    "text": "The visualization uses TidyTuesday’s Wastewater Plants dataset (Sep 2022), whose data context and information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
   },
   {
     "objectID": "dataviz/wastewater/wastewater.html#data-context",
     "href": "dataviz/wastewater/wastewater.html#data-context",
     "title": "Wastewater Treatment Plants",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
+    "text": "The visualization uses TidyTuesday’s Wastewater Plants dataset (Sep 2022), whose data context and information can be accessed at this link\n\nHydroWASTE_v10 &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')"
   },
   {
     "objectID": "dataviz/wastewater/wastewater.html#research-question",
@@ -74,14 +74,14 @@
     "href": "dataviz/taylor/taylor.html",
     "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
+    "text": "The visualization uses TidyTuesday’s Taylor Swift dataset (Oct 2023), whose data context and information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
     "objectID": "dataviz/taylor/taylor.html#data-context",
     "href": "dataviz/taylor/taylor.html#data-context",
     "title": "Audio Features in Taylor Swift’s Grammy-Winning Albums",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
+    "text": "The visualization uses TidyTuesday’s Taylor Swift dataset (Oct 2023), whose data context and information can be accessed at this link\n\ntaylor_all_songs &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-17/taylor_all_songs.csv')"
   },
   {
     "objectID": "dataviz/taylor/taylor.html#research-question",
@@ -109,14 +109,14 @@
     "href": "dataviz/coffee/coffee.html",
     "title": "Coffee Spending & Preferences",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
+    "text": "The visualization uses TidyTuesday’s The Great American Coffee Taste Test (May 2024), whose data context and information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
   },
   {
     "objectID": "dataviz/coffee/coffee.html#data-context",
     "href": "dataviz/coffee/coffee.html#data-context",
     "title": "Coffee Spending & Preferences",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
+    "text": "The visualization uses TidyTuesday’s The Great American Coffee Taste Test (May 2024), whose data context and information can be accessed at this link\n\ncoffee_survey &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')"
   },
   {
     "objectID": "dataviz/coffee/coffee.html#research-question",
@@ -158,14 +158,14 @@
     "href": "dataviz/candy/candy.html",
     "title": "Halloween Candies’ Win Percentage",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+    "text": "The visualization uses FiveThirtyEight’s Candy Power Ranking dataset, whose data context and information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
   },
   {
     "objectID": "dataviz/candy/candy.html#data-context",
     "href": "dataviz/candy/candy.html#data-context",
     "title": "Halloween Candies’ Win Percentage",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
+    "text": "The visualization uses FiveThirtyEight’s Candy Power Ranking dataset, whose data context and information can be accessed at this link\n\ncandy &lt;- read.csv(\"candy-data.csv\")"
   },
   {
     "objectID": "dataviz/candy/candy.html#research-question",
@@ -207,14 +207,14 @@
     "href": "dataviz/museum/museum.html",
     "title": "UK Museums",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+    "text": "The visualization uses TidyTuesday’s Museums dataset (Nov 2022), whose data context and information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
   },
   {
     "objectID": "dataviz/museum/museum.html#data-context",
     "href": "dataviz/museum/museum.html#data-context",
     "title": "UK Museums",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
+    "text": "The visualization uses TidyTuesday’s Museums dataset (Nov 2022), whose data context and information can be accessed at this link\n\nmuseums &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')"
   },
   {
     "objectID": "dataviz/museum/museum.html#research-question",
@@ -242,14 +242,14 @@
     "href": "dataviz/valentine/valentine.html",
     "title": "Valentine’s Spending By Year",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
+    "text": "The visualization uses TidyTuesday’s Valentine’s Day Consumer Data dataset (Feb 2024), whose data context and information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
   },
   {
     "objectID": "dataviz/valentine/valentine.html#data-context",
     "href": "dataviz/valentine/valentine.html#data-context",
     "title": "Valentine’s Spending By Year",
     "section": "",
-    "text": "The dataset and its information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
+    "text": "The visualization uses TidyTuesday’s Valentine’s Day Consumer Data dataset (Feb 2024), whose data context and information can be accessed at this link\n\nhistorical_spending &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-13/historical_spending.csv')"
   },
   {
     "objectID": "dataviz/valentine/valentine.html#research-question",

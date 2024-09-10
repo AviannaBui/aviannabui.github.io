@@ -19,7 +19,7 @@ library(ggpubr)
 
 ## Data Context
 
-The dataset and its information can be accessed at <a href="https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking" target="_blank" rel="noopener">this link</a> 
+The visualization uses FiveThirtyEight's **Candy Power Ranking** dataset, whose data context and information can be accessed at <a href="https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking" target="_blank" rel="noopener">this link</a> 
 
 ```{r}
 candy <- read.csv("candy-data.csv")

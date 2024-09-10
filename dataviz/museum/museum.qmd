@@ -23,7 +23,7 @@ library(showtext)
 
 ## Data Context
 
-The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-11-22" target="_blank" rel="noopener">this link</a> 
+The visualization uses TidyTuesday's **Museums** dataset (Nov 2022), whose data context and information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-11-22" target="_blank" rel="noopener">this link</a> 
 
 ```{r, message = FALSE}
 museums <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-22/museums.csv')

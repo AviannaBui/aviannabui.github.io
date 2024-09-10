@@ -22,7 +22,7 @@ library(showtext)
 
 ## Data Context
 
-The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-20" target="_blank" rel="noopener">this link</a> 
+The visualization uses TidyTuesday's **Wastewater Plants** dataset (Sep 2022), whose data context and information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-09-20" target="_blank" rel="noopener">this link</a> 
 
 ```{r, message = FALSE}
 HydroWASTE_v10 <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-20/HydroWASTE_v10.csv')

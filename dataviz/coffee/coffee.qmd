@@ -23,7 +23,7 @@ library(showtext)
 
 ## Data Context
 
-The dataset and its information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2024/2024-05-14/readme.md" target="_blank" rel="noopener">this link</a> 
+The visualization uses TidyTuesday's **The Great American Coffee Taste Test** (May 2024), whose data context and information can be accessed at <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2024/2024-05-14/readme.md" target="_blank" rel="noopener">this link</a> 
 
 ```{r echo = TRUE, message=FALSE, warning=FALSE, show_col_types = FALSE}
 coffee_survey <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-05-14/coffee_survey.csv')

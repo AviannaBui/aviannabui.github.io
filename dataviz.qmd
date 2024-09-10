@@ -11,3 +11,4 @@ page-layout: full
 comments: false
 ---
 
+Where I experimenting with new data visualization techniques to turn complex data into informative, digestible, and engaging narratives. 

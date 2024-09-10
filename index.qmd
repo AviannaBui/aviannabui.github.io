@@ -17,20 +17,29 @@ about:
 
 :::{#introduction}
 
-I'm an aspiring human-centered data scientist & business analyst with professional experience in aviation, healthcare, and HR analytics. Blending my educational psychology learning with my data science expertise, I foster data-driven decision-making and strategic growth by drawing on cognitive science and learning frameworks to deliver insightful data analysis and actionable insights. 
+I'm a human-centered data scientist & business analyst with professional experience in aviation, healthcare, and HR analytics. Blending my educational psychology learning with my data science expertise, I foster data-driven decision-making and strategic growth by drawing on cognitive science and learning frameworks to deliver insightful data analysis and actionable insights. 
 
 ### Professional Experiences
 
-**Endeavor Air**, subsidiary of Delta Air Lines | Operational Analytics Intern | 2024 - present
+**Operational Analytics Intern**<br>
+Endeavor Air, Delta Air Lines' subsidiary | May 2024 - present
 
-**Macalester College** | Machine Learning & Data Science Teaching Assistant | 2022 - 2024
+**Machine Learning & Data Science Teaching Assistant**<br>
+Macalester College | 2022 - 2024
 
-**Panacea Healthcare Solutions** | Healthcare Data Intern | 2023
+**Product Analyst Researcher**<br>
+Macalester College | 2023
+
+**Healthcare Data Intern**<br>
+Panacea Healthcare Solutions | 2023
+
+**HR Business Analyst Intern**<br>
+Tinhvan Consulting | 2020 - 2021
 
 ### Education
 
 **Macalester College** | B.A. expected May 2025 | GPA: 4.0<br>
-*Data Science major, Psychology and Education minors*
+*<a href="https://www.macalester.edu/mscs/majorsminors/#program-3955" target="_blank" rel="noopener">Data Science</a> major, Psychology and Education minors*
 
 :::
 

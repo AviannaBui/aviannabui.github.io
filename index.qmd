@@ -17,15 +17,15 @@ about:
 
 :::{#introduction}
 
-I'm a passionate early-career data scientist and business analyst with multi-industry experience in aviation, healthcare, and HR analytics. With a strong foundation in data science and cognitive psychology, I specialize in transforming complex data into accessible formats and actionable insights for non-technical stakeholders to drive data-driven decision-making and business growth.
+I'm a passionate early-career data scientist and business analyst with multi-industry experience in aviation, healthcare, and HR analytics. Leveraging my strong foundation in data science, cognitive science, and I/O psychology, I specialize in transforming complex data into accessible visualizations and actionable insights to drive data-driven decision-making and transformative business growth.
 
 ### Professional Experiences
 
-**Operational Analytics Intern**<br>
+**Operational Performance Analyst Intern**<br>
 Endeavor Air, Delta Air Lines' subsidiary | May 2024 - present
 
 **Machine Learning & Data Science Teaching Assistant**<br>
-Macalester College | 2022 - 2024
+Macalester College | 2022 - present
 
 **Product Analyst Researcher**<br>
 Macalester College | 2023

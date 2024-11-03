@@ -6,8 +6,10 @@ date: 12-15-2021
 image: thumbnail.png
 categories:
   - R
-  - Statistical Modeling
+  - Predictive Analytics
   - Regression Analysis
+  - Statistical Modeling
+  - Statistical Tests
 about: 
   template: solana
   image: thumbnail.png

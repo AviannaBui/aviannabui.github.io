@@ -6,6 +6,7 @@ date: 12-13-2022
 image: thumbnail.png
 categories:
   - R
+  - Descriptive Statistics
 about: 
   template: solana
   image: thumbnail.png

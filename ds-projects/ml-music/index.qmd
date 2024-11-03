@@ -7,6 +7,7 @@ image: thumbnail.png
 categories:
   - R
   - Machine Learning
+  - Predictive Analytics
   - Correlation Analysis
 about: 
   template: solana

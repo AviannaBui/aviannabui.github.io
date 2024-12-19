@@ -9,7 +9,6 @@ categories:
   - Predictive Analytics
   - Regression Analysis
   - Statistical Modeling
-  - Statistical Tests
 about: 
   template: solana
   image: thumbnail.png

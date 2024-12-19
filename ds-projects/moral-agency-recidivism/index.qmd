@@ -1,0 +1,27 @@
+---
+title: "Causal Impact of Moral Agency on Recidivism in Juvenile Delinquency"
+description: |
+  Causal Inference, Matching, Doubly Robust Estimation, AIPW, Moderation Analysis, Sensitivity Analysis
+date: 12-17-2024
+image: thumbnail.png
+categories:
+  - R
+  - Causal Inference
+  - Moderation Analysis
+  - Sensitivity Analysis
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/causal-inference-moral-agency-effect-on-recidivism 
+    - icon: file-earmark-pdf-fill
+      text: PDF
+      href: Final-Project-Paper.pdf
+---
+
+Crime is a multifaceted social construct rooted in the interplay of psychological, sociological, legal, and historical dimensions. Due to this complex web of influences, the
+etiology of crime remains elusive, posing significant obstacles for policymakers and legal professionals to deter crimes. While penal measures have long been central to upholding justice and/or social order, addressing crime solely through punitive approaches risks overlooking the underlying motivations behind criminal behavior. A deeper understanding of delinquent drivers and their interactions can facilitate more comprehensive and extensive preventive and rehabilitative crime-prevention strategies to mitigate crime, deter recidivism, and promote long-term, pro-social behavioral change.
+
+I investigate two research questions in this project. First, I aim to explore the causal impact of moral agency on criminal behavior, specifically within the context of recidivism among juvenile delinquents, where I define moral agency as the capability of moral decision-making and the willingness to be accountable for one’s behavior under a normative ethical framework. By quantifying the causal impact of changes in moral agency on reoffending likelihood, I can examine cognitive theories of crime and potentially inform cognitive-behavioral treatment (CBT) strategies that target moral reasoning in juvenile probation. Second, I seek to investigate how internal moral frameworks intersect with social and systemic factors in influencing criminal behavior by conducting a moderation analysis to examine the link between moral agency and recidivism under different social conditions, informed by two sociological theories of crime.

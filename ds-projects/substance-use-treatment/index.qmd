@@ -1,0 +1,23 @@
+---
+title: "How Substance Abuse Treatment Impacts Quality of Life in Public-Funded Facilities"
+description: |
+  Random Forest, Predictive Analytics, Distribution Analysis
+date: 12-14-2024
+image: thumbnail.png
+categories:
+  - R
+  - Machine Learning
+  - Predictive Analytics
+  - Distribution Analysis
+about: 
+  template: solana
+  image: thumbnail.png
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/AviannaBui/ds456-how-substance-use-treatment-impact-life-outcome
+---
+
+Our research question centers on examining how treatment-related factors influence quality of life outcomes, from admission to discharge, in public substance abuse facilities. By identifying key treatment-related factors that impact the quality of life for individuals undergoing substance use treatment in public facilities, we want to potentially pinpoint means or approaches to improve the efficacy of substance use treatment to different needs. Ideally, understanding the mechanisms/relationship between treatment and life outcomes can improve long-term recovery and relapse-prevention prospects for substance abuse patients.
+
+Collab project with Ethan Caldecott and Miles Libbey (Macalester '25) 

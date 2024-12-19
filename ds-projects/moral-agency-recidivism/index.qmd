@@ -18,7 +18,7 @@ about:
       href: https://github.com/AviannaBui/causal-inference-moral-agency-effect-on-recidivism 
     - icon: file-earmark-pdf-fill
       text: PDF
-      href: Final-Project-Paper.pdf
+      href: https://drive.google.com/file/d/1ugJUNkktKzZPVYvWzApHQDlu1o06qQdx/view?usp=sharing
 ---
 
 Crime is a multifaceted social construct rooted in the interplay of psychological, sociological, legal, and historical dimensions. Due to this complex web of influences, the

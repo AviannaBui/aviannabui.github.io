@@ -1,9 +1,10 @@
 ---
 title: "Hi, I'm Hien-Anh (Avianna)!"
+subtitle: "An innovative data scientist & analytical problem-solver"
 about:
   id: introduction
-  template: broadside
-  image-width: 8em
+  template: jolla
+  image-width: 15em
   image-shape: round
   image: images/profile.jpg
   links:
@@ -13,11 +14,19 @@ about:
     - icon: github
       text: Github
       href: https://github.com/AviannaBui
+engine: knitr
+
 ---
 
-:::{#introduction}
+```{css echo=FALSE}
+.columns {
+text-align: center;
+}
+```
 
-I'm a passionate early-career data scientist and business analyst with multi-industry experience in aviation, healthcare, and HR analytics. Leveraging my strong foundation in data science, cognitive science, and I/O psychology, I specialize in transforming complex data into accessible visualizations and actionable insights to drive data-driven decision-making and transformative business growth.
+::: {.columns}
+
+I leverage my strong data science, business intelligence, and people analytics skills to transform complex data into actionable insights for data-driven decision-making and sustainable business growth.
 
 ### Professional Experiences
 
@@ -28,7 +37,7 @@ Endeavor Air, Delta Air Lines' subsidiary | May 2024 - present
 Macalester College | 2022 - present
 
 **Product Analyst Researcher**<br>
-Macalester College | 2023
+<a href="https://milnel2.github.io/blocks4alliOS/" target="_blank" rel="noopener">Blocks4All</a> @Macalester College | 2023
 
 **Healthcare Data Intern**<br>
 Panacea Healthcare Solutions | 2023

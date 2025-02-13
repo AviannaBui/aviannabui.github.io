@@ -2,24 +2,37 @@
 
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Catamaran:wght@400&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400&display=swap';
 
 $primary: #BD4C85 !default;
 
 $link-color: #B94366;
 
-$font-family-sans-serif: Raleway !default; 
+$font-family-sans-serif: 'Josefin Slab' !default; 
+
+$font-size-base: 1rem !default;
 
 /*-- scss:rules --*/
 
 .navbar-brand
 {
-  font-family: 'Poppins', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 25px !important;
 }
 
 .title
 {
-  font-family: 'Poppins', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 32px !important;
+}
+
+.subtitle
+{
+  font-family: 'Josefin Slab', serif;
+  font-size: 1rem !important;
+  font-weight: bold;
+  #font-style: italic;
+  color: #79305a;
 }

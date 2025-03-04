@@ -1,6 +1,6 @@
 ---
 title: "Hi, I'm Hien-Anh (Avianna)!"
-subtitle: "An innovative data scientist & analytical problem-solver"
+subtitle: "Creative data scientist & problem-solver with passion for human-centered design"
 about:
   id: introduction
   template: jolla
@@ -26,7 +26,7 @@ text-align: center;
 
 ::: {.columns}
 
-I leverage my strong data science, business intelligence, and people analytics skills to transform complex data into actionable insights for data-driven decision-making and sustainable business growth.
+My Data Science journey began 5 years ago during my HR Business Analyst internship, where I discovered the power of data in driving strategic decisions and enhancing human-centered solutions. Today, I am a Data Scientist and Analyst with experience in airline operations, accessibility technology, and healthcare who is passionate in creating quality and engaging products and services for customers. Leveraging my expertise in data science, statistical modeling, and cognitive science, I drive operational excellence through advancing predictive analytics, streamlining data workflows, and translating complex data into actionable insights.
 
 ### Professional Experiences
 

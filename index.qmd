@@ -26,15 +26,18 @@ text-align: center;
 
 ::: {.columns}
 
-My Data Science journey began 5 years ago during my HR Business Analyst internship, where I discovered the power of data in driving strategic decisions and enhancing human-centered solutions. Today, I am a Data Scientist and Analyst with experience in airline operations, accessibility technology, and healthcare who is passionate in creating quality and engaging products and services for customers. Leveraging my expertise in data science, statistical modeling, and cognitive science, I drive operational excellence through advancing predictive analytics, streamlining data workflows, and translating complex data into actionable insights.
+I am a BI Engineer and Data Analyst with multi-industry experiences in healthcare, airline operations, accessibility technology, and HR management who is passionate in creating quality and engaging products and services for customers. Leveraging my expertise in data science, statistical modeling, and cognitive science, I drive operational excellence through advancing predictive analytics, streamlining data workflows, and translating complex data into actionable insights.
 
 ### Professional Experiences
 
+**Business Intelligence Engineer I**<br>
+Humana | Jun 2025 - present
+
 **Operational Performance Analyst Intern**<br>
-Endeavor Air, Delta Air Lines' subsidiary | May 2024 - present
+Endeavor Air, Delta Air Lines' subsidiary | 2024 - 2025
 
 **Machine Learning & Data Science Teaching Assistant**<br>
-Macalester College | 2022 - present
+Macalester College | 2022 - 2025
 
 **Product Analyst Researcher**<br>
 <a href="https://milnel2.github.io/blocks4alliOS/" target="_blank" rel="noopener">Blocks4All</a> @Macalester College | 2023
@@ -47,8 +50,8 @@ Tinhvan Consulting | 2020 - 2021
 
 ### Education
 
-**Macalester College** | B.A. expected May 2025 | GPA: 4.0<br>
-*<a href="https://www.macalester.edu/mscs/majorsminors/#program-3955" target="_blank" rel="noopener">Data Science</a> major, Psychology and Education minors*
+**Macalester College** | B.A. in Data Science, May 2025<br>
+*<a href="https://www.macalester.edu/mscs/majorsminors/#program-3955" target="_blank" rel="noopener">Data Science</a> major, Psychology and Education minors (GPA: 4.0/4.0)*
 
 :::
 
